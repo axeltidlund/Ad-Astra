@@ -579,3 +579,35 @@ Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03e
  -> (artifact id: '0a987b562ecbcafc85d8e008ef43c1fc') in 0.048654 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 255.480457 seconds.
+  path: Assets/Living/Player
+  artifactKey: Guid(0201524fd2a80d24f930234493d5119c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Living/Player using Guid(0201524fd2a80d24f930234493d5119c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 28 workers.
+ -> (artifact id: 'a923aa5644db42f62ce1ef45be1915cb') in 0.012297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Living
+  artifactKey: Guid(59ae8b4a64c0ccc47b183374a5e1ac3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Living using Guid(59ae8b4a64c0ccc47b183374a5e1ac3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 28 workers.
+ -> (artifact id: '27bf328aef49327633bdc6d40dbd60d5') in 0.007474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Living/Player/Scripts
+  artifactKey: Guid(53b46ce0e103863439935c53c5c7d3cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Living/Player/Scripts using Guid(53b46ce0e103863439935c53c5c7d3cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 28 workers.
+ -> (artifact id: '9b60d707458bb697cebb15322252fcca') in 0.010319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
