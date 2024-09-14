@@ -21,15 +21,7 @@ Learning pixel art and expanding my understanding of shaders and 2D visual effec
     - Reactions between different types of damage that occur when they interact on enemies
     - Permanent upgrades, gradually unlock as you play more runs
     - Primarily offense-based
-- Procedural Generation
-    - Stitch together rooms
 - Dungeon-crawler
     - Upgrades every room / level
-
-### Player
-
-A space soldier sent from Earth to colonize new planets.
-
-- Responsive Movement WASD
-- Aim with mouse
-- Dashes (Possible upgrade?)
+- Procedural Generation?
+    - Stitch together rooms
