@@ -280,3 +280,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 644.155448 seconds.
+  path: Assets/Tilesets
+  artifactKey: Guid(21f8693599d73554788842aaa2a319bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets using Guid(21f8693599d73554788842aaa2a319bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 28 workers.
+ -> (artifact id: 'ef4995d20207209741ac8700d25e40e4') in 0.004139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5013.686338 seconds.
+  path: Assets/Tilesets/Rectangular Palette.prefab
+  artifactKey: Guid(d3d100d5834fabc469396b7635eeabb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Rectangular Palette.prefab using Guid(d3d100d5834fabc469396b7635eeabb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 28 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 28 workers.
+ -> (artifact id: '5620c59b8c15f50c86111ab6d2a4d361') in 0.213801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
