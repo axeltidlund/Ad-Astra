@@ -15,7 +15,7 @@ public class PlayerStateMachine : MonoBehaviour
 
     public Vector2 movementInput;
 
-    Input inputComponent;
+    InputComponent inputComponent;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class PlayerStateMachine : MonoBehaviour
         //noControlState.Setup(this);
 
         state = idleState;
-        inputComponent = GetComponent<Input>();
+        inputComponent = GetComponent<InputComponent>();
     }
     void SelectState()
     {
