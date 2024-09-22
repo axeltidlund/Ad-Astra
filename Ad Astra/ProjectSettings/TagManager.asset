@@ -50,3 +50,6 @@ TagManager:
   - name: Walls
     uniqueID: 3533298033
     locked: 0
+  - name: Effects
+    uniqueID: 4039434347
+    locked: 0
