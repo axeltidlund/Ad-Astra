@@ -18,10 +18,10 @@ MonoBehaviour:
   damage: 51
   attackRate: 1
   knockback: 15
-  gunPrefab: {fileID: 0}
+  isAutoUse: 0
+  gunPrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
   reactiveType: 1
   magazineAmount: 5
   reloadTime: 2
   shotRange: 40
-  shotSpeed: 5
   spread: 0

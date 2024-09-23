@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b4a58f4ac50a4cba4ddb33fafc59a, type: 3}
+  m_Name: StarcasterProjectile
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
+  travelSpeed: 100
+  timeLeft: 10

@@ -12,4 +12,13 @@ public static class Helpers
         Gravity,
         Nebula
     }
+
+    public static void FlipGameObject(GameObject go)
+    {
+        go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y * -1, go.transform.position.z);
+
+        SpriteRenderer sprite = go.GetComponent<SpriteRenderer>();
+        if (sprite == null) return;
+        sprite.flipY = !sprite.flipY;
+    }
 }

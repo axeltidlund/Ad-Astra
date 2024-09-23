@@ -9,6 +9,5 @@ public class RangedWeaponData : WeaponData
     public float reloadTime;
 
     public float shotRange;
-    public float shotSpeed;
     public float spread;
 }
