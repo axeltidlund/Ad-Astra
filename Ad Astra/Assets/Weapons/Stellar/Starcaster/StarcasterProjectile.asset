@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: StarcasterProjectile
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
-  travelSpeed: 100
-  timeLeft: 10
+  travelSpeed: 1000
+  timeLeft: 1

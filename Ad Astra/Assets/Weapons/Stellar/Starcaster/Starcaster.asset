@@ -16,9 +16,9 @@ MonoBehaviour:
   description: Fires heavy stars that travel slowly and deal high damage without
     piercing.
   damage: 51
-  attackRate: 1
+  attackRate: 100
   knockback: 15
-  isAutoUse: 0
+  isAutoUse: 1
   gunPrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
   reactiveType: 1
   magazineAmount: 5

@@ -25,14 +25,21 @@ public abstract class Projectile : MonoBehaviour
         _projectileData = projectileData;
         _timeLeft = _projectileData.timeLeft;
 
-        transform.SetPositionAndRotation(origin.position, origin.rotation);
+        float spread = 0;
+        if (weaponData is RangedWeaponData)
+        {
+            RangedWeaponData rangedData = weaponData as RangedWeaponData;
+            spread = rangedData.spread;
+        }
+        transform.SetPositionAndRotation(origin.position, origin.rotation * Quaternion.Euler(0, 0, Random.Range(-spread, spread)));
     }
     public void Update()
     {
         _timeLeft -= Time.deltaTime;
         if (_timeLeft < 0)
         {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            Destroy(this.gameObject, 1f);
         }
         AI();
     }
