@@ -17,5 +17,6 @@ public class WeaponData : ScriptableObject
 
     public GameObject gunPrefab;
 
-    public Helpers.ReactiveType reactiveType;
+    public Global.ReactiveType reactiveType;
+    public Global.Rarities rarity;
 }

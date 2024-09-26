@@ -21,6 +21,7 @@ MonoBehaviour:
   isAutoUse: 1
   gunPrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
   reactiveType: 1
+  rarity: 1
   magazineAmount: 5
   reloadTime: 2
   shotRange: 40
