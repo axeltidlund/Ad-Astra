@@ -100,8 +100,8 @@ TextureImporter:
       name: space_station_1_tileset_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 160
+        x: 0
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -121,8 +121,8 @@ TextureImporter:
       name: space_station_1_tileset_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -142,8 +142,8 @@ TextureImporter:
       name: space_station_1_tileset_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 160
+        x: 32
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -163,8 +163,8 @@ TextureImporter:
       name: space_station_1_tileset_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
+        x: 48
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -184,8 +184,8 @@ TextureImporter:
       name: space_station_1_tileset_4
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
+        x: 64
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -205,8 +205,8 @@ TextureImporter:
       name: space_station_1_tileset_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 144
+        x: 80
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -226,8 +226,8 @@ TextureImporter:
       name: space_station_1_tileset_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 96
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -247,8 +247,8 @@ TextureImporter:
       name: space_station_1_tileset_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 0
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -268,8 +268,8 @@ TextureImporter:
       name: space_station_1_tileset_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
+        x: 16
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -289,8 +289,8 @@ TextureImporter:
       name: space_station_1_tileset_9
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
+        x: 32
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -310,8 +310,8 @@ TextureImporter:
       name: space_station_1_tileset_10
       rect:
         serializedVersion: 2
-        x: 128
-        y: 144
+        x: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -331,8 +331,8 @@ TextureImporter:
       name: space_station_1_tileset_11
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -352,8 +352,8 @@ TextureImporter:
       name: space_station_1_tileset_12
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
+        x: 80
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -373,8 +373,8 @@ TextureImporter:
       name: space_station_1_tileset_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 96
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -394,8 +394,8 @@ TextureImporter:
       name: space_station_1_tileset_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 0
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -415,8 +415,8 @@ TextureImporter:
       name: space_station_1_tileset_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 16
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -436,8 +436,8 @@ TextureImporter:
       name: space_station_1_tileset_16
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 32
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -457,8 +457,8 @@ TextureImporter:
       name: space_station_1_tileset_17
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 48
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -478,8 +478,8 @@ TextureImporter:
       name: space_station_1_tileset_18
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 64
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -499,8 +499,8 @@ TextureImporter:
       name: space_station_1_tileset_19
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -520,8 +520,8 @@ TextureImporter:
       name: space_station_1_tileset_20
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
+        x: 96
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -541,8 +541,8 @@ TextureImporter:
       name: space_station_1_tileset_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
+        x: 0
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -562,8 +562,8 @@ TextureImporter:
       name: space_station_1_tileset_22
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
+        x: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -583,8 +583,8 @@ TextureImporter:
       name: space_station_1_tileset_23
       rect:
         serializedVersion: 2
-        x: 112
-        y: 112
+        x: 32
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -604,8 +604,8 @@ TextureImporter:
       name: space_station_1_tileset_24
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -625,8 +625,8 @@ TextureImporter:
       name: space_station_1_tileset_25
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 64
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -646,8 +646,8 @@ TextureImporter:
       name: space_station_1_tileset_26
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -667,8 +667,8 @@ TextureImporter:
       name: space_station_1_tileset_27
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 96
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -688,8 +688,8 @@ TextureImporter:
       name: space_station_1_tileset_28
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -710,7 +710,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -731,7 +731,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -752,7 +752,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -773,7 +773,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -794,7 +794,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -814,8 +814,8 @@ TextureImporter:
       name: space_station_1_tileset_34
       rect:
         serializedVersion: 2
-        x: 112
-        y: 80
+        x: 96
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -835,8 +835,8 @@ TextureImporter:
       name: space_station_1_tileset_35
       rect:
         serializedVersion: 2
-        x: 128
-        y: 80
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -856,8 +856,8 @@ TextureImporter:
       name: space_station_1_tileset_36
       rect:
         serializedVersion: 2
-        x: 144
-        y: 80
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -877,8 +877,8 @@ TextureImporter:
       name: space_station_1_tileset_37
       rect:
         serializedVersion: 2
-        x: 160
-        y: 80
+        x: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -898,8 +898,8 @@ TextureImporter:
       name: space_station_1_tileset_38
       rect:
         serializedVersion: 2
-        x: 176
-        y: 80
+        x: 48
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -919,8 +919,8 @@ TextureImporter:
       name: space_station_1_tileset_39
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 64
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -940,8 +940,8 @@ TextureImporter:
       name: space_station_1_tileset_40
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
+        x: 80
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -961,8 +961,8 @@ TextureImporter:
       name: space_station_1_tileset_41
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 96
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -974,510 +974,6 @@ TextureImporter:
       bones: []
       spriteID: 000538dcfba6cbd4ba66c2d93467ac86
       internalID: -662928901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_42
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56ea4213df3dfcf4f957956f21215400
-      internalID: 621696773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_43
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f502733dc61b61448d3f6d44f5cfd24
-      internalID: -1017686026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_44
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 237d2086f5f9859458c5ef87c3e73c73
-      internalID: -1620577288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_45
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9109230e32ad14c4480a5c2465f4febd
-      internalID: 1477217908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_46
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67992510032de3945b883c37fa7d5bf5
-      internalID: -1122497080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_47
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e4d853893d8b8c419baf696f630a31a
-      internalID: -811113820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_48
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fe72a1ed99cc67418c7dde1fb0d32fc
-      internalID: 1671249554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_49
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa9e0e230032baa44b16d4886b78f78e
-      internalID: -1934747520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_50
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c954e709f957799499c4c4697c97b70e
-      internalID: -103189071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_51
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bae7a780b3a2e084f85302c8183b4700
-      internalID: -2078483698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_52
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4be2421667a46742b728f6a0700ed1c
-      internalID: 26200496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_53
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 908e5f513475f3b41ad0b11c9446c447
-      internalID: -1570127910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_54
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 298c917b729166548a9c4eac1e0eeb8d
-      internalID: -1326299476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_55
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d970f2b7b2750d4ea6f66198d936372
-      internalID: 350733324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_56
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6224c67b1fb00d840b89a5a5524fecf7
-      internalID: -613486622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_57
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb801d81a6ccb9c46b7aa7a3cc0bffdb
-      internalID: 555762267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_58
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11bc96b638ff2ff4c8679db19242bed1
-      internalID: 2131303787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_59
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2a0ac938e5793e46bf808f7372551c2
-      internalID: -78650461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_60
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70a4bedd7633f5a43902a92f88f5d797
-      internalID: -1814089317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_61
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcc50a29e141a3b4b8c89987496fa211
-      internalID: -1057775778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_62
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7dd056a026fee5348a212d23d7880c96
-      internalID: -18982844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_63
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72633aa741a100847ae684bb9b4c266a
-      internalID: 505676301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_64
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7143f777ae83534ca080281fc14e01f
-      internalID: 305091147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: space_station_1_tileset_65
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e41e3d4f490e7e45bcc2ec03a34abdf
-      internalID: -1121709222
       vertices: []
       indices: 
       edges: []
@@ -1530,32 +1026,8 @@ TextureImporter:
       space_station_1_tileset_4: 11659822
       space_station_1_tileset_40: 255916232
       space_station_1_tileset_41: -662928901
-      space_station_1_tileset_42: 621696773
-      space_station_1_tileset_43: -1017686026
-      space_station_1_tileset_44: -1620577288
-      space_station_1_tileset_45: 1477217908
-      space_station_1_tileset_46: -1122497080
-      space_station_1_tileset_47: -811113820
-      space_station_1_tileset_48: 1671249554
-      space_station_1_tileset_49: -1934747520
       space_station_1_tileset_5: 1619940177
-      space_station_1_tileset_50: -103189071
-      space_station_1_tileset_51: -2078483698
-      space_station_1_tileset_52: 26200496
-      space_station_1_tileset_53: -1570127910
-      space_station_1_tileset_54: -1326299476
-      space_station_1_tileset_55: 350733324
-      space_station_1_tileset_56: -613486622
-      space_station_1_tileset_57: 555762267
-      space_station_1_tileset_58: 2131303787
-      space_station_1_tileset_59: -78650461
       space_station_1_tileset_6: -1566505744
-      space_station_1_tileset_60: -1814089317
-      space_station_1_tileset_61: -1057775778
-      space_station_1_tileset_62: -18982844
-      space_station_1_tileset_63: 505676301
-      space_station_1_tileset_64: 305091147
-      space_station_1_tileset_65: -1121709222
       space_station_1_tileset_7: -1602389753
       space_station_1_tileset_8: -480778978
       space_station_1_tileset_9: 1331244266
