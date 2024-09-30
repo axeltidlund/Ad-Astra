@@ -11,6 +11,6 @@ public class StarcasterProjectile : Projectile
     }
     public override void AI()
     {
-        _rb.velocity = _rb.velocity * .98f;
+
     }
 }

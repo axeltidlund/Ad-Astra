@@ -272,6 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42716a9462da8341ae76183e3817bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wallCollider: {fileID: 0}
+  mainCollider: {fileID: 0}
 --- !u!96 &845721690856935472
 TrailRenderer:
   serializedVersion: 3

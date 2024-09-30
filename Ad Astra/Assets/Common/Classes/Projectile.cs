@@ -11,6 +11,9 @@ public abstract class Projectile : MonoBehaviour
     protected float _spawnTime => Time.fixedTime;
     protected Transform _origin;
 
+    public Collider2D wallCollider;
+    public Collider2D mainCollider;
+
     protected Rigidbody2D _rb;
     public float _timeLeft { get; protected set; }
 
@@ -38,10 +41,12 @@ public abstract class Projectile : MonoBehaviour
         _timeLeft -= Time.deltaTime;
         if (_timeLeft < 0)
         {
+            OnKill();
             this.gameObject.SetActive(false);
             Destroy(this.gameObject, 1f);
         }
         AI();
     }
     public virtual void AI() { }
+    public virtual void OnKill() { }
 }

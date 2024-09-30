@@ -18,10 +18,10 @@ public class InputComponent : MonoBehaviour
     {
         if (context.started)
         {
-            mouseDown.Invoke();
+            this.GetComponent<PlayerInventory>()?.HandleWeaponPress(true);
         } else if (context.canceled)
         {
-            mouseUp.Invoke();
+            this.GetComponent<PlayerInventory>()?.HandleWeaponPress(false);
         }
     }
 }
