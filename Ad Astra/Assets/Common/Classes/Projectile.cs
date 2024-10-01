@@ -11,7 +11,6 @@ public abstract class Projectile : MonoBehaviour
     protected float _spawnTime => Time.fixedTime;
     protected Transform _origin;
 
-    public Collider2D wallCollider;
     public Collider2D mainCollider;
 
     protected Rigidbody2D _rb;
@@ -46,7 +45,14 @@ public abstract class Projectile : MonoBehaviour
             Destroy(this.gameObject, 1f);
         }
         AI();
+
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, _rb.velocity, _rb.velocity.magnitude, LayerMask.GetMask("Walls"));
+        if (hit != false) { 
+
+        }
     }
     public virtual void AI() { }
     public virtual void OnKill() { }
+
+    public virtual void OnWall(Collider2D collision) { }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarcasterProjectile : Projectile
+public class VoidstickProjectile : Projectile
 {
     public override void Spawn(WeaponData weaponData, ProjectileData projectileData, Transform origin)
     {

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a8c8957347bf642ad370fefe8cdd08, type: 3}
+  m_Name: Voidstick
+  m_EditorClassIdentifier: 
+  displayName: Voidstick
+  description: Good ol' reliable double barrel shotgun.
+  damage: 5
+  attackRate: 4
+  knockback: 15
+  isAutoUse: 0
+  gunPrefab: {fileID: 2472387515838586888, guid: df1d10eb029d91a429d9c099a6c3cfc0, type: 3}
+  reactiveType: 3
+  rarity: 0
+  magazineAmount: 2
+  reloadTime: 2
+  shotRange: 80
+  spread: 20
