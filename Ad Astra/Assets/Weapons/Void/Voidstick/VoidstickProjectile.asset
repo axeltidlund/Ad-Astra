@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VoidstickProjectile
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4525687196487094131, guid: e221731568b1e544a9d19de428e58969, type: 3}
-  travelSpeed: 400
+  travelSpeed: 1200
   timeLeft: 1

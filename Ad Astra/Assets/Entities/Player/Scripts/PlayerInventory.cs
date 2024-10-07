@@ -13,6 +13,7 @@ public class PlayerInventory : MonoBehaviour
     private GameObject _currentWeaponPrefab;
 
     public Transform weaponHolder;
+    public Transform aim;
 
     private void Awake()
     {

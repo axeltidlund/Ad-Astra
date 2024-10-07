@@ -10,11 +10,13 @@ public abstract class Weapon : MonoBehaviour
 
     protected float _lastUse = 0;
     protected float _timeSinceLastUse => Time.fixedTime - _lastUse;
+    protected PlayerAim playerAim;
 
     private bool _isKeyHeld = false;
 
     public void OnPress() {
         _isKeyHeld = true;
+        playerAim = GetComponentInParent<PlayerAim>();
         DoPress();
     }
     public void OnRelease() {

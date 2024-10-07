@@ -24,5 +24,6 @@ MonoBehaviour:
   rarity: 1
   magazineAmount: 5
   reloadTime: 2
+  recoil: 15
   shotRange: 80
   spread: 0

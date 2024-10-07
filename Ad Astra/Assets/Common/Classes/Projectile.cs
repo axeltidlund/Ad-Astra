@@ -46,13 +46,13 @@ public abstract class Projectile : MonoBehaviour
         }
         AI();
 
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, _rb.velocity, _rb.velocity.magnitude, LayerMask.GetMask("Walls"));
-        if (hit != false) { 
-
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, _rb.velocity, _rb.velocity.magnitude * Time.fixedDeltaTime, LayerMask.GetMask("Walls"));
+        if (hit) {
+            OnWall(hit);
         }
     }
     public virtual void AI() { }
     public virtual void OnKill() { }
 
-    public virtual void OnWall(Collider2D collision) { }
+    public virtual void OnWall(RaycastHit2D hitInfo) { }
 }

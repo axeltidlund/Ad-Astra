@@ -8,6 +8,7 @@ public class RangedWeaponData : WeaponData
     public int magazineAmount;
     public float reloadTime;
 
+    public float recoil;
     public float shotRange;
     public float spread;
 }

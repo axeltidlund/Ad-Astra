@@ -15,6 +15,7 @@ public class Starcaster : RangedWeapon
         if (!canUse) return;
         _shooter.FireProjectile(weaponData, firePoint.transform);
         _lastUse = Time.fixedTime;
+        playerAim.Recoil((weaponData as RangedWeaponData).recoil, 1f);
     }
     protected override void Reload()
     {

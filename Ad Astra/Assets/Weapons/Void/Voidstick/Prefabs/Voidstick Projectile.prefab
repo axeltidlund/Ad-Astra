@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4522810694350093605}
   - component: {fileID: 6508964841645489959}
   - component: {fileID: 401738371198070121}
-  - component: {fileID: 8260223119483079773}
   - component: {fileID: 4420712825390098627}
   - component: {fileID: 7497244314407884355}
+  - component: {fileID: 8375101443950678127}
   m_Layer: 3
   m_Name: Voidstick Projectile
   m_TagString: VFX
@@ -115,19 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &8260223119483079773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4525687196487094131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e42716a9462da8341ae76183e3817bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCollider: {fileID: 7497244314407884355}
 --- !u!96 &4420712825390098627
 TrailRenderer:
   serializedVersion: 3
@@ -276,3 +263,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &8375101443950678127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4525687196487094131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e5266343c694d4ea7c309d01d18213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCollider: {fileID: 7497244314407884355}
