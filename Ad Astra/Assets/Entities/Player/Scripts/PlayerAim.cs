@@ -36,11 +36,12 @@ public class PlayerAim : MonoBehaviour
 
     public void Recoil(float strength, float time)
     {
+        float oldRecoil = recoilStrength * recoilTime;
         recoilTime = Mathf.Min(1, time);
         recoilStrength = Mathf.Min(359, strength);
 
         Vector3 aim = GetAim();
-        currentRecoil = recoilStrength * weaponHolder.localScale.y;
+        currentRecoil = (recoilStrength + oldRecoil) * weaponHolder.localScale.y;
         aimTransform.eulerAngles = aim + new Vector3(0, 0, currentRecoil);
     }
 
@@ -50,6 +51,7 @@ public class PlayerAim : MonoBehaviour
 
         if (recoilTime <= 0)
         {
+            recoilTime = 0;
             aimTransform.eulerAngles = aim;
         }
         else

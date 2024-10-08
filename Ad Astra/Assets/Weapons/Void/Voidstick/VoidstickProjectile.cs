@@ -13,12 +13,4 @@ public class VoidstickProjectile : Projectile
     {
 
     }
-    public override void OnWall(RaycastHit2D hitInfo)
-    {
-       // OnKill();
-       // this.gameObject.SetActive(false);
-       // Destroy(this.gameObject, 1f);
-
-        _rb.velocity = Vector2.Reflect(_rb.velocity, hitInfo.normal);
-    }
 }

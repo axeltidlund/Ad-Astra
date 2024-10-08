@@ -9,4 +9,6 @@ public class ProjectileData : ScriptableObject
 
     public float travelSpeed;
     public float timeLeft;
+
+    public int ricochets;
 }

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Voidstick
   m_EditorClassIdentifier: 
   displayName: Voidstick
-  description: Good ol' reliable double barrel shotgun.
+  description: Good ol' reliable double barrel shotgun... this time with a hint of
+    antimatter.
   damage: 5
-  attackRate: 4
+  attackRate: 15
   knockback: 15
   isAutoUse: 0
   gunPrefab: {fileID: 2472387515838586888, guid: df1d10eb029d91a429d9c099a6c3cfc0, type: 3}
@@ -23,6 +24,6 @@ MonoBehaviour:
   rarity: 0
   magazineAmount: 2
   reloadTime: 2
-  recoil: 100
+  recoil: 50
   shotRange: 80
-  spread: 20
+  spread: 25

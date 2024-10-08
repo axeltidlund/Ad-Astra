@@ -7,6 +7,7 @@ public abstract class Projectile : MonoBehaviour
 {
     protected WeaponData _weaponData;
     protected ProjectileData _projectileData;
+    protected PlayerInventory _playerInventory;
 
     protected float _spawnTime => Time.fixedTime;
     protected Transform _origin;
@@ -15,6 +16,8 @@ public abstract class Projectile : MonoBehaviour
 
     protected Rigidbody2D _rb;
     public float _timeLeft { get; protected set; }
+
+    private int _ricochets = 0;
 
     private void Awake()
     {
@@ -26,6 +29,7 @@ public abstract class Projectile : MonoBehaviour
         _origin = origin;
         _projectileData = projectileData;
         _timeLeft = _projectileData.timeLeft;
+        _ricochets = _projectileData.ricochets;
 
         float spread = 0;
         if (weaponData is RangedWeaponData)
@@ -54,5 +58,23 @@ public abstract class Projectile : MonoBehaviour
     public virtual void AI() { }
     public virtual void OnKill() { }
 
-    public virtual void OnWall(RaycastHit2D hitInfo) { }
+    public virtual void OnWall(RaycastHit2D hitInfo) {
+        if (_ricochets > 0 || GeneralFunctions.instance.PlayerHasAugment("Ricochet") ) {
+            Vector2 newVelocity = Vector2.Reflect(_rb.velocity, hitInfo.normal);
+            if (GeneralFunctions.instance.PlayerHasAugment("Rebound Flirt"))
+            {
+                newVelocity *= 1.2f;
+            }
+
+            _rb.velocity = newVelocity;
+
+            if (GeneralFunctions.instance.PlayerHasAugment("Ricochet")) { return; }
+            _ricochets -= 1;
+        } else
+        {
+            OnKill();
+            this.gameObject.SetActive(false);
+            Destroy(this.gameObject, 1f);
+        }
+    }
 }

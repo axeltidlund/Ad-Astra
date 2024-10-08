@@ -7,9 +7,6 @@ using UnityEngine.InputSystem;
 public class InputComponent : MonoBehaviour
 {
     public Vector2 movementInput { get; protected set; }
-
-    public UnityEvent mouseDown;
-    public UnityEvent mouseUp;
     public void UpdateMove(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();

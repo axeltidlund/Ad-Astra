@@ -42,7 +42,6 @@ public static class Global
         CosmicStorm,
         QuasarPulse
     }
-
     public static void FlipGameObject(GameObject go)
     {
         go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y * -1, go.transform.position.z);

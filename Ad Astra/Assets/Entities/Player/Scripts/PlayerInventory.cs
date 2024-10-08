@@ -27,7 +27,6 @@ public class PlayerInventory : MonoBehaviour
 
         SpawnWeapon(i);
     }
-
     private void SpawnWeapon(int i)
     {
         _currentWeaponIndex = i;

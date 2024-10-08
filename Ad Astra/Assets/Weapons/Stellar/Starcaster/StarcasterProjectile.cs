@@ -13,10 +13,4 @@ public class StarcasterProjectile : Projectile
     {
 
     }
-    public override void OnWall(RaycastHit2D hitInfo)
-    {
-        OnKill();
-        this.gameObject.SetActive(false);
-        Destroy(this.gameObject, 1f);
-    }
 }
