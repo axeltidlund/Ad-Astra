@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Input))]
-public class PlayerStateMachine : MonoBehaviour
+public class PlayerStateMachine : StateMachine
 {
     public State idleState;
     public State movementState;
     //public State noControlState;
 
     public Moveable moveableComponent;
-
-    State state;
 
     public Vector2 movementInput;
 

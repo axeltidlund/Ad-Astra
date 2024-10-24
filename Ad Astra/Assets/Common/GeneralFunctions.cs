@@ -15,6 +15,7 @@ public class GeneralFunctions : MonoBehaviour
     {
         bool hasAugment = false;
 
+        if (player.GetComponent<PlayerInventory>().augmentations.Count == 0) return false;
         foreach (AugmentData augment in player.GetComponent<PlayerInventory>().augmentations)
         {
             if (augment.name.Equals(augmentName))

@@ -10,7 +10,7 @@ public class PlayerIdleState : State
     }
     public override void Do()
     {
-        if (input.movementInput.magnitude > 0) { isComplete = true; }
+        if ((input as PlayerStateMachine).movementInput.magnitude > 0) { isComplete = true; }
     }
     public override void Exit()
     {

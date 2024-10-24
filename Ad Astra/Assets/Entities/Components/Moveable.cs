@@ -14,5 +14,6 @@ public class Moveable : MonoBehaviour
     public void Move(Vector2 movement, float speed)
     {
         body.MovePosition(body.position + movement.normalized * speed * Time.fixedDeltaTime);
+        body.velocity = Vector2.zero;
     }
 }
