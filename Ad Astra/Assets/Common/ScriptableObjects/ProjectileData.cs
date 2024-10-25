@@ -11,4 +11,7 @@ public class ProjectileData : ScriptableObject
     public float timeLeft;
 
     public int ricochets;
+    public int penetration;
+
+    public float maxAllowedHitFrequency = .1f;
 }

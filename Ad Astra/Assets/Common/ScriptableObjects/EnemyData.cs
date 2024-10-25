@@ -2,14 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "EnemyData", menuName = "ScriptableObjects/EnemyData")]
-public class EnemyData : ScriptableObject
+[CreateAssetMenu(fileName = "EnemyData", menuName = "ScriptableObjects/EntityData/Enemy")]
+public class EnemyData : EntityData
 {
-    public string displayName;
-
-    public float speed;
     public float attackSpeed;
-
-    public float attack;
-    public float globalRes = 1;
+    public float detectionRange;
 }

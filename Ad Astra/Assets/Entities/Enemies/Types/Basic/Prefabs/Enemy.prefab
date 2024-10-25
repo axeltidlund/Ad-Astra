@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2824399096633520183}
   - component: {fileID: 8012503680705106242}
   - component: {fileID: 8410255905900837446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   - {x: -0.07181066, y: -0.043257773, z: 0}
   m_ShapePathHash: -1110279282
   m_Mesh: {fileID: 0}
-  m_InstanceId: -3560
+  m_InstanceId: -1352
   m_LocalBounds:
     m_Center: {x: 0.016849399, y: 0.714152, z: 0}
     m_Extent: {x: 0.2558475, y: 0.7776749, z: 0}
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933158451522324411}
   - component: {fileID: 8858416017586909408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,8 +222,10 @@ GameObject:
   - component: {fileID: 7446451854999089011}
   - component: {fileID: 5933888898307523538}
   - component: {fileID: 5705407979795509173}
-  - component: {fileID: 2875413715910417719}
-  m_Layer: 0
+  - component: {fileID: 4530689799069816895}
+  - component: {fileID: 6221205640971817260}
+  - component: {fileID: 7566070583208126401}
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -339,8 +341,8 @@ MonoBehaviour:
   moveableComponent: {fileID: 7446451854999089011}
   player: {fileID: 0}
   enemyData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
---- !u!58 &2875413715910417719
-CircleCollider2D:
+--- !u!70 &4530689799069816895
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -371,9 +373,35 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 10
+  m_Offset: {x: 0, y: 0.68}
+  m_Size: {x: 0.5, y: 1.56}
+  m_Direction: 0
+--- !u!114 &6221205640971817260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500341071641414854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6a5de7b425adb4e99b8ec4d5dd9b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7566070583208126401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500341071641414854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e62f47d55f2ba34dba9aea5358821f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
+  globalRes: 0
 --- !u!1 &2564966297010169969
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3422974694135684453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: States
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7569299954637936074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873737579100448678}
   - component: {fileID: 5115660367030201502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2611272845334533908}
   - component: {fileID: 3246045415600899530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerAugmentData", menuName = "ScriptableObjects/Augments/PlayerAugmentData")]
 public class PlayerAugmentData : StatAugmentData
 {
-
     public Global.AugmentStat augmentStat;
     public Global.ReactiveType reactiveType;
 

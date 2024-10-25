@@ -18,6 +18,8 @@ public abstract class Projectile : MonoBehaviour
     public float _timeLeft { get; protected set; }
 
     private int _ricochets = 0;
+    private int _penetrations = 0;
+    private float _lastHit = 0;
 
     private void Awake()
     {
@@ -30,6 +32,7 @@ public abstract class Projectile : MonoBehaviour
         _projectileData = projectileData;
         _timeLeft = _projectileData.timeLeft;
         _ricochets = _projectileData.ricochets;
+        _penetrations = _projectileData.penetration;
 
         float spread = 0;
         if (weaponData is RangedWeaponData)
@@ -44,19 +47,41 @@ public abstract class Projectile : MonoBehaviour
         _timeLeft -= Time.deltaTime;
         if (_timeLeft < 0)
         {
-            OnKill();
             this.gameObject.SetActive(false);
             Destroy(this.gameObject, 1f);
         }
         AI();
 
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, _rb.velocity, _rb.velocity.magnitude * Time.fixedDeltaTime, LayerMask.GetMask("Walls"));
-        if (hit) {
+        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, _rb.velocity, _rb.velocity.magnitude * Time.fixedDeltaTime, hitLayers);
+
+        if (!hit) return;
+        if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Walls"))
+        {
             OnWall(hit);
+        }
+        else if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        {
+            ProcessHit(hit);
+        }
+    }
+
+    private void ProcessHit(RaycastHit2D hit)
+    {
+        if (Time.fixedTime - _lastHit < _projectileData.maxAllowedHitFrequency) return;
+        _lastHit = Time.fixedTime;
+
+        // Damage
+
+        if (_penetrations <= 0)
+        {
+            OnHit();
+            this.gameObject.SetActive(false);
+            Destroy(this.gameObject, 1f);
         }
     }
     public virtual void AI() { }
-    public virtual void OnKill() { }
+    public virtual void OnHit() { }
 
     public virtual void OnWall(RaycastHit2D hitInfo) {
         if (_ricochets > 0 || GeneralFunctions.instance.PlayerHasAugment("Ricochet") ) {
@@ -72,7 +97,7 @@ public abstract class Projectile : MonoBehaviour
             _ricochets -= 1;
         } else
         {
-            OnKill();
+            OnHit();
             this.gameObject.SetActive(false);
             Destroy(this.gameObject, 1f);
         }
