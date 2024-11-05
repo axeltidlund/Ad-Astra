@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Basic
   maxHealth: 50
-  speed: 4
+  speed: 100
   attack: 15
   globalRes: 1
   attackSpeed: 2
