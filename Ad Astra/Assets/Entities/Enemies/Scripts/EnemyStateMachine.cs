@@ -10,7 +10,7 @@ public class EnemyStateMachine : StateMachine
 
     public Moveable moveableComponent;
 
-    public GameObject player;
+    private GameObject player;
     public EnemyData enemyData;
 
     void Start()

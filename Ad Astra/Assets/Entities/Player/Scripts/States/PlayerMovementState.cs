@@ -15,7 +15,7 @@ public class PlayerMovementState : State
     }
     public override void FixedDo()
     {
-        (input as PlayerStateMachine).moveableComponent.Move((input as PlayerStateMachine).movementInput, moveSpeed);
+        (input as PlayerStateMachine).moveableComponent.Move((input as PlayerStateMachine).movementInput, moveSpeed * Time.fixedDeltaTime);
     }
     public override void Exit()
     {
