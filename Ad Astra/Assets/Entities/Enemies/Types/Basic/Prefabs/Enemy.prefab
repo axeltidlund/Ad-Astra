@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2824399096633520183}
   - component: {fileID: 8012503680705106242}
   - component: {fileID: 8410255905900837446}
+  - component: {fileID: 3776764171326568005}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -53,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ef6f31c27ece48647b4d9eea0762148b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1a94fa173fbcc5041a15e5f0fc7efb62, type: 3}
-  m_Color: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,10 +122,24 @@ MonoBehaviour:
   - {x: -0.07181066, y: -0.043257773, z: 0}
   m_ShapePathHash: -1110279282
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1352
+  m_InstanceId: -70812
   m_LocalBounds:
     m_Center: {x: 0.016849399, y: 0.714152, z: 0}
     m_Extent: {x: 0.2558475, y: 0.7776749, z: 0}
+--- !u!114 &3776764171326568005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115860083985502672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5030c47bba66ec849b7a62d86e4a08bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: ef6f31c27ece48647b4d9eea0762148b, type: 2}
+  flashTime: 0.25
 --- !u!1 &2188845034432654727
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +403,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6a5de7b425adb4e99b8ec4d5dd9b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3776764171326568005}
+        m_TargetAssemblyTypeName: FlashOnDamage, Assembly-CSharp
+        m_MethodName: Do
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7566070583208126401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
-  globalRes: 0
 --- !u!1 &2564966297010169969
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873737579100448678}
   - component: {fileID: 5115660367030201502}
+  - component: {fileID: 6414925196752340103}
   m_Layer: 8
   m_Name: Chase
   m_TagString: Untagged
@@ -511,6 +541,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded103e2d5153754eac971a7996ec151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canSeePlayer: 0
+--- !u!58 &6414925196752340103
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403669348447386706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 10
 --- !u!1 &8453746417045452936
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2611272845334533908}
   - component: {fileID: 3246045415600899530}
+  - component: {fileID: 4816644318635459868}
   m_Layer: 8
   m_Name: Idle
   m_TagString: Untagged
@@ -555,3 +622,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f391458e2b6b7d243b9fcfe02aea77d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canSeePlayer: 0
+--- !u!58 &4816644318635459868
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8453746417045452936}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 10

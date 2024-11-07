@@ -10,7 +10,7 @@ public class EnemyStateMachine : StateMachine
 
     public Moveable moveableComponent;
 
-    private GameObject player;
+    public GameObject player;
     public EnemyData enemyData;
 
     void Start()
@@ -20,13 +20,14 @@ public class EnemyStateMachine : StateMachine
         //noControlState.Setup(this);
 
         state = idleState;
+        player = FindAnyObjectByType<PlayerStateMachine>().gameObject;
     }
     void SelectState()
     {
-        if (player)
+        if ((idleState as EnemyIdleState_Basic).canSeePlayer)
         {
             state = chaseState;
-        } else
+        } else if (!(chaseState as EnemyChaseState_Basic).canSeePlayer)
         {
             state = idleState;
         }
@@ -43,15 +44,5 @@ public class EnemyStateMachine : StateMachine
     private void FixedUpdate()
     {
         state?.FixedDo();
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (!collision.gameObject.tag.Equals("Player")) return;
-        player = collision.gameObject;
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (!collision.gameObject.tag.Equals("Player")) return;
-        player = null;
     }
 }

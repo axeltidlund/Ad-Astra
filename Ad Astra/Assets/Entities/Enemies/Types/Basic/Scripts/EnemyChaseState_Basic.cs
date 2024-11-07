@@ -5,6 +5,8 @@ using UnityEngine.Windows;
 
 public class EnemyChaseState_Basic : State
 {
+    public bool canSeePlayer = false;
+
     EnemyStateMachine input_enemy;
     Vector2 direction;
     public override void Enter()
@@ -13,7 +15,7 @@ public class EnemyChaseState_Basic : State
     }
     public override void Do()
     {
-        if (input_enemy.player == null) { isComplete = true; }
+        if (!canSeePlayer) { isComplete = true; }
         direction = (input_enemy.player.transform.position - this.transform.position).normalized;
     }
     public override void FixedDo()
@@ -23,5 +25,15 @@ public class EnemyChaseState_Basic : State
     public override void Exit()
     {
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.gameObject.tag.Equals("Player")) return;
+        canSeePlayer = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!collision.gameObject.tag.Equals("Player")) return;
+        canSeePlayer = false;
     }
 }

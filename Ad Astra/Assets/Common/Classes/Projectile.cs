@@ -60,7 +60,7 @@ public abstract class Projectile : MonoBehaviour
         {
             OnWall(hit);
         }
-        else if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        else if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Enemies") && hit.collider.gameObject.tag == "Enemy")
         {
             ProcessHit(hit);
         }
@@ -72,6 +72,11 @@ public abstract class Projectile : MonoBehaviour
         _lastHit = Time.fixedTime;
 
         // Damage
+        Damageable damageable = hit.rigidbody.gameObject.GetComponent<Damageable>();
+        if (damageable != null )
+        {
+            damageable.Damage(_weaponData.damage, _weaponData.reactiveType);
+        }
 
         if (_penetrations <= 0)
         {
