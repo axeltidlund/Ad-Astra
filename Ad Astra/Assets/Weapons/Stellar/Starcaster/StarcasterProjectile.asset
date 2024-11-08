@@ -15,3 +15,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
   travelSpeed: 180
   timeLeft: 5
+  radius: 0.6
+  ricochets: 0
+  penetration: 0
+  maxAllowedHitFrequency: 0.1

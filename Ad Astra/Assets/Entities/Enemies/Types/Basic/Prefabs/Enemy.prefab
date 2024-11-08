@@ -122,7 +122,7 @@ MonoBehaviour:
   - {x: -0.07181066, y: -0.043257773, z: 0}
   m_ShapePathHash: -1110279282
   m_Mesh: {fileID: 0}
-  m_InstanceId: -70812
+  m_InstanceId: -1374
   m_LocalBounds:
     m_Center: {x: 0.016849399, y: 0.714152, z: 0}
     m_Extent: {x: 0.2558475, y: 0.7776749, z: 0}
@@ -138,7 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5030c47bba66ec849b7a62d86e4a08bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat: {fileID: 2100000, guid: ef6f31c27ece48647b4d9eea0762148b, type: 2}
   flashTime: 0.25
 --- !u!1 &2188845034432654727
 GameObject:
@@ -389,7 +388,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.68}
-  m_Size: {x: 0.5, y: 1.56}
+  m_Size: {x: 0.59, y: 1.67}
   m_Direction: 0
 --- !u!114 &6221205640971817260
 MonoBehaviour:
