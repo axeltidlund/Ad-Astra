@@ -17,7 +17,9 @@ MonoBehaviour:
     antimatter.
   damage: 5
   attackRate: 15
-  knockback: 15
+  knockback: 5
+  knockbackStrength: 5
+  knockbackTime: 0.2
   isAutoUse: 0
   gunPrefab: {fileID: 2472387515838586888, guid: df1d10eb029d91a429d9c099a6c3cfc0, type: 3}
   reactiveType: 3

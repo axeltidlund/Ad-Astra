@@ -17,7 +17,6 @@ public class FlashOnDamage : MonoBehaviour
     }
     IEnumerator Flash()
     {
-        Debug.Log("HI");
         mat.SetInt("_Hit", 1);
         yield return new WaitForSeconds(flashTime);
         mat.SetInt("_Hit", 0);

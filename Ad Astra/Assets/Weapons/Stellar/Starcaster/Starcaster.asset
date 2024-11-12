@@ -17,7 +17,9 @@ MonoBehaviour:
     piercing.
   damage: 51
   attackRate: 1
-  knockback: 15
+  knockback: 2
+  knockbackStrength: 2
+  knockbackTime: 1
   isAutoUse: 0
   gunPrefab: {fileID: 1953863327994511009, guid: ca43d58f0ce28b2428ade049ed06aba1, type: 3}
   reactiveType: 2

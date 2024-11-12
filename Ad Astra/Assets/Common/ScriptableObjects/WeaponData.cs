@@ -13,6 +13,9 @@ public class WeaponData : ScriptableObject
     public float attackRate;
     public float knockback;
 
+    public float knockbackStrength;
+    public float knockbackTime;
+
     public bool isAutoUse;
 
     public GameObject gunPrefab;

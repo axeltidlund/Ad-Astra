@@ -75,7 +75,7 @@ public abstract class Projectile : MonoBehaviour
         Damageable damageable = hit.rigidbody.gameObject.GetComponent<Damageable>();
         if (damageable != null )
         {
-            damageable.Damage(_weaponData.damage, _weaponData.reactiveType);
+            damageable.Damage(_weaponData.damage, _weaponData.reactiveType, gameObject.GetComponent<Rigidbody2D>().velocity.normalized * _weaponData.knockbackStrength, _weaponData.knockbackTime);
         }
 
         if (_penetrations <= 0)

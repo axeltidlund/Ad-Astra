@@ -20,7 +20,7 @@ public class EnemyChaseState_Basic : State
     }
     public override void FixedDo()
     {
-        input_enemy.moveableComponent.Move(direction, input_enemy.enemyData.speed * Time.fixedDeltaTime); // calculate speed
+        input_enemy.moveableComponent.Move(direction, input_enemy.enemyData.speed * Time.fixedDeltaTime, false); // calculate speed
     }
     public override void Exit()
     {
