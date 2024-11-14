@@ -51,7 +51,6 @@ public class Damageable : MonoBehaviour
     {
         if (impulseTime > 0f)
         {
-            Debug.Log(impulse);
             moveable.Move(impulse.normalized, impulse.magnitude, true);
         }
     }
