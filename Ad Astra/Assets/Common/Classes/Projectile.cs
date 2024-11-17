@@ -53,7 +53,7 @@ public abstract class Projectile : MonoBehaviour
         AI();
 
         LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
-        RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, _projectileData.radius, _rb.velocity, _rb.velocity.magnitude * Time.fixedDeltaTime, hitLayers);
+        RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, _projectileData.radius, -transform.right, _rb.velocity.magnitude * Time.fixedDeltaTime, hitLayers);
 
         if (!hit) return;
         if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Walls"))
