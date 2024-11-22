@@ -6,6 +6,7 @@ public class GeneralFunctions : MonoBehaviour
 {
     public static GeneralFunctions instance;
     public GameObject player;
+    public GameObject indicator;
     private void Awake()
     {
         instance = this;
@@ -25,5 +26,14 @@ public class GeneralFunctions : MonoBehaviour
         }
 
         return hasAugment;
+    }
+
+    public void SpawnDamageIndicator(Vector2 position, float damage, float duration)
+    {
+        GameObject go = Instantiate(indicator);
+        go.transform.position = position;
+        
+        DamageIndicator di = go.GetComponent<DamageIndicator>();
+        di.Setup(damage.ToString(), duration);
     }
 }
