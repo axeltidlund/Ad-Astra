@@ -31,7 +31,7 @@ public class GeneralFunctions : MonoBehaviour
     public void SpawnDamageIndicator(Vector2 position, float damage, float duration)
     {
         GameObject go = Instantiate(indicator);
-        go.transform.position = position;
+        go.transform.position = position + new Vector2(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f));
         
         DamageIndicator di = go.GetComponent<DamageIndicator>();
         di.Setup(damage.ToString(), duration);
