@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,34 @@ public class GeneralFunctions : MonoBehaviour
     public static GeneralFunctions instance;
     public GameObject player;
     public GameObject indicator;
+
+    public CinemachineVirtualCamera cam;
+    private CinemachineBasicMultiChannelPerlin noise;
+
+    public float shakeDuration = 0f;
     private void Awake()
     {
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+    private void Start()
+    {
+        if (cam != null)
+        {
+            noise = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        }
+    }
+    private void Update()
+    {
+        if (shakeDuration < 0f )
+        {
+            shakeDuration = 0f;
+            noise.m_AmplitudeGain = 0f;
+        }
+        else
+        {
+            shakeDuration -= Time.deltaTime;
+        }
     }
     public bool PlayerHasAugment(string augmentName)
     {
@@ -35,5 +60,11 @@ public class GeneralFunctions : MonoBehaviour
         
         DamageIndicator di = go.GetComponent<DamageIndicator>();
         di.Setup(damage.ToString(), duration);
+    }
+    public void ShakeCamera(float duration, float amplitude, float frequency)
+    {
+        shakeDuration = duration;
+        noise.m_AmplitudeGain = amplitude;
+        noise.m_FrequencyGain = frequency;
     }
 }

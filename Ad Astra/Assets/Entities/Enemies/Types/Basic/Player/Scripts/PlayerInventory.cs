@@ -1,0 +1,52 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerInventory : MonoBehaviour
+{
+    public WeaponData[] weapons = new WeaponData[3];
+    public List<AugmentData> augmentations;
+
+    private int _currentWeaponIndex = 0;
+    private GameObject _currentWeaponPrefab;
+
+    public Transform weaponHolder;
+    public Transform aim;
+
+    private void Awake()
+    {
+        SpawnWeapon(_currentWeaponIndex);
+    }
+    public void SwitchWeapon(InputAction.CallbackContext context)
+    {
+        if (!context.started) return;
+        int i = Convert.ToInt32(context.control.name) - 1;
+        if (_currentWeaponIndex == i) return;
+
+        SpawnWeapon(i);
+    }
+    private void SpawnWeapon(int i)
+    {
+        _currentWeaponIndex = i;
+        if (_currentWeaponPrefab != null)
+        {
+            Destroy(_currentWeaponPrefab);
+        }
+        if (weapons[_currentWeaponIndex] == null) return;
+        _currentWeaponPrefab = Instantiate(weapons[_currentWeaponIndex].gunPrefab, weaponHolder);
+    }
+
+    public void HandleWeaponPress(bool started)
+    {
+        if (_currentWeaponPrefab == null) return;
+        if (started)
+        {
+            _currentWeaponPrefab.GetComponent<Weapon>()?.OnPress();
+        } else
+        {
+            _currentWeaponPrefab.GetComponent<Weapon>()?.OnRelease();
+        }
+    }
+}

@@ -34,6 +34,11 @@ public abstract class Projectile : MonoBehaviour
         _ricochets = _projectileData.ricochets;
         _penetrations = _projectileData.penetration;
 
+        if (GeneralFunctions.instance.PlayerHasAugment("AP Ammo"))
+        {
+            _penetrations += 5;
+        }
+
         float spread = 0;
         if (weaponData is RangedWeaponData)
         {
@@ -78,6 +83,7 @@ public abstract class Projectile : MonoBehaviour
             damageable.Damage(_weaponData.damage, _weaponData.reactiveType, gameObject.GetComponent<Rigidbody2D>().velocity.normalized * _weaponData.knockbackStrength, _weaponData.knockbackTime);
         }
 
+        _penetrations -= 1;
         if (_penetrations <= 0)
         {
             OnHit();

@@ -18,6 +18,8 @@ public abstract class Weapon : MonoBehaviour
         _isKeyHeld = true;
         playerAim = GetComponentInParent<PlayerAim>();
         DoPress();
+
+        GeneralFunctions.instance.ShakeCamera(.1f, 5f, 5f);
     }
     public void OnRelease() {
         _isKeyHeld = false;
