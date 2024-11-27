@@ -24,6 +24,9 @@ MonoBehaviour:
   gunPrefab: {fileID: 2472387515838586888, guid: df1d10eb029d91a429d9c099a6c3cfc0, type: 3}
   reactiveType: 3
   rarity: 0
+  shakeDuration: 0.08
+  shakeSpeed: 5
+  shakeAmp: 6
   magazineAmount: 2
   reloadTime: 2
   recoil: 50

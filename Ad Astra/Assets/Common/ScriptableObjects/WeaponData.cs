@@ -22,4 +22,14 @@ public class WeaponData : ScriptableObject
 
     public Global.ReactiveType reactiveType;
     public Global.Rarities rarity;
+
+    public float shakeDuration;
+    public float shakeSpeed;
+    public float shakeAmp;
+
+    public void Shake(bool canUse)
+    {
+        if (!canUse) { return; }
+        GeneralFunctions.instance.ShakeCamera(shakeDuration, shakeAmp, shakeSpeed);
+    }
 }
