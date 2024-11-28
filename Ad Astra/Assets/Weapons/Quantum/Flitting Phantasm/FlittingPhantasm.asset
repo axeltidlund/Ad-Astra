@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a315ad0f18319ff4496bd711dfad4263, type: 3}
+  m_Name: FlittingPhantasm
+  m_EditorClassIdentifier: 
+  displayName: FlittingPhantasm
+  description: Fast swinging scythe
+  damage: 14
+  attackRate: 4
+  knockback: 15
+  knockbackStrength: 15
+  knockbackTime: 0.15
+  isAutoUse: 1
+  gunPrefab: {fileID: 0}
+  reactiveType: 1
+  rarity: 2
+  shakeDuration: 0.2
+  shakeSpeed: 4
+  shakeAmp: 2
+  shootSound: {fileID: 0}
+  coverageAngle: 90
