@@ -19,6 +19,7 @@ public abstract class Weapon : MonoBehaviour
         playerAim = GetComponentInParent<PlayerAim>();
 
         weaponData.Shake(canUse);
+        weaponData.Sound(canUse, playerAim.aimTransform);
         DoPress();
     }
     public void OnRelease() {
@@ -36,6 +37,7 @@ public abstract class Weapon : MonoBehaviour
         if (weaponData.isAutoUse && _isKeyHeld)
         {
             weaponData.Shake(canUse);
+            weaponData.Sound(canUse, playerAim.aimTransform);
             DoPress();
         }
     }

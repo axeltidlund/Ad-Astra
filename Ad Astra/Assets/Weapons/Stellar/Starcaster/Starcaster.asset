@@ -27,6 +27,7 @@ MonoBehaviour:
   shakeDuration: 0.15
   shakeSpeed: 2
   shakeAmp: 6
+  shootSound: {fileID: 8300000, guid: 6d0dc0f806fb6de4584285cc7fd8e43f, type: 3}
   magazineAmount: 5
   reloadTime: 2
   recoil: 15

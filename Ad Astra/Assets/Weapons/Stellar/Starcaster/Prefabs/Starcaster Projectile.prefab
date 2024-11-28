@@ -274,6 +274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCollider: {fileID: 1834139731638213079}
+  explosion: {fileID: 929362068060213795, guid: b348df18e955ce34ab0939c14a7ed4bd, type: 3}
+  clip: {fileID: 8300000, guid: 1bb3e9d270bf2224baa673141b4b1165, type: 3}
 --- !u!96 &845721690856935472
 TrailRenderer:
   serializedVersion: 3

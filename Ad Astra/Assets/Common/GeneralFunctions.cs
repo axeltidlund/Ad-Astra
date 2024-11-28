@@ -12,6 +12,8 @@ public class GeneralFunctions : MonoBehaviour
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
 
+    public GameObject audioPrefab;
+
     public float shakeDuration = 0f;
     private void Awake()
     {
@@ -66,5 +68,16 @@ public class GeneralFunctions : MonoBehaviour
         shakeDuration = duration;
         noise.m_AmplitudeGain = amplitude;
         noise.m_FrequencyGain = frequency;
+    }
+
+    public void PlaySound(AudioClip clip, float volume, Transform _transform)
+    {
+        GameObject go = Instantiate(audioPrefab, _transform.position, Quaternion.identity);
+        AudioSource source = go.GetComponent<AudioSource>();
+        source.clip = clip;
+        source.volume = volume;
+        source.loop = false;
+        source.Play();
+        Destroy(go, clip.length);
     }
 }

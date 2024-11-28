@@ -27,9 +27,16 @@ public class WeaponData : ScriptableObject
     public float shakeSpeed;
     public float shakeAmp;
 
+    public AudioClip shootSound;
+
     public void Shake(bool canUse)
     {
         if (!canUse) { return; }
         GeneralFunctions.instance.ShakeCamera(shakeDuration, shakeAmp, shakeSpeed);
+    }
+    public void Sound(bool canUse, Transform origin)
+    {
+        if (!canUse) { return; }
+        GeneralFunctions.instance.PlaySound(shootSound, 1f, origin);
     }
 }

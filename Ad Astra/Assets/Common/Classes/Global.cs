@@ -94,6 +94,14 @@ public static class Global
             }
         },
     };
+
+    public static Dictionary<Rarities, int> rarityWeights = new Dictionary<Rarities, int>
+    {
+        { Rarities.Common, 50 },
+        { Rarities.Rare, 30 },
+        { Rarities.Epic, 15 },
+        { Rarities.Legendary, 5 }
+    };
     public static void FlipGameObject(GameObject go)
     {
         go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y * -1, go.transform.position.z);

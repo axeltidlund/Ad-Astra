@@ -15,4 +15,4 @@ MonoBehaviour:
   icon: {fileID: 2800000, guid: 4583b29876c979e4ebf6f482b42a6305, type: 3}
   displayName: Rebound Flirt
   description: Every time a bullet bounces, increase speed by 20%.
-  rarity: 2
+  rarity: 1

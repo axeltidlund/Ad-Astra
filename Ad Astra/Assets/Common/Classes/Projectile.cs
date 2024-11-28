@@ -86,15 +86,19 @@ public abstract class Projectile : MonoBehaviour
         _penetrations -= 1;
         if (_penetrations <= 0)
         {
-            OnHit();
             this.gameObject.SetActive(false);
             Destroy(this.gameObject, 1f);
         }
+
+        OnHit();
     }
     public virtual void AI() { }
     public virtual void OnHit() { }
 
     public virtual void OnWall(RaycastHit2D hitInfo) {
+        if (Time.fixedTime - _lastHit < _projectileData.maxAllowedHitFrequency) return;
+        _lastHit = Time.fixedTime;
+
         if (_ricochets > 0 || GeneralFunctions.instance.PlayerHasAugment("Ricochet") ) {
             Vector2 newVelocity = Vector2.Reflect(_rb.velocity, hitInfo.normal);
             if (GeneralFunctions.instance.PlayerHasAugment("Rebound Flirt"))
