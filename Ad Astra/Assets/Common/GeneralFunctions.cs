@@ -1,3 +1,4 @@
+using AYellowpaper.SerializedCollections;
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,9 @@ public class GeneralFunctions : MonoBehaviour
     private CinemachineBasicMultiChannelPerlin noise;
 
     public GameObject audioPrefab;
+
+    [SerializedDictionary("Reactive Type", "Color")]
+    public SerializedDictionary<Global.ReactiveType, Color> TypeColors;
 
     public float shakeDuration = 0f;
     private void Awake()

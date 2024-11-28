@@ -31,6 +31,7 @@ public class Damageable : MonoBehaviour
         float finalDamage = damage * stats.GetGlobalResistance() * stats.GetResistance(System.Enum.GetName(typeof(Global.ReactiveType), element));
         health = Mathf.Max(0, health - finalDamage);
         GeneralFunctions.instance.SpawnDamageIndicator(transform.position, finalDamage, .5f);
+        stats.ApplyElement(element);
 
         if (_impulse == Vector2.zero || _impulseDuration <= 0) { return; }
         moveable.locked = true;

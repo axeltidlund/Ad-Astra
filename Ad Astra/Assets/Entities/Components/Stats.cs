@@ -9,6 +9,8 @@ public class Stats : MonoBehaviour
 
     private float globalRes;
     private Dictionary<string, float> resistances = new Dictionary<string, float>();
+
+    [SerializeField]
     private Global.ReactiveType currentElement = Global.ReactiveType.None;
 
     private void Awake()
@@ -24,13 +26,25 @@ public class Stats : MonoBehaviour
     public float GetGlobalResistance() { return globalRes; }
     public float GetResistance(string element) { return resistances[element]; }
 
-    public void ApplyElement(string element)
+    public void ApplyElement(Global.ReactiveType element)
     {
-        Global.ReactiveType parsedElement = (Global.ReactiveType)Enum.Parse(typeof(Global.ReactiveType), element);
-        if (parsedElement != Global.ReactiveType.None) { return; }
-        if (currentElement == parsedElement) { return; }
+        if (element == Global.ReactiveType.None) { return; }
+        if (currentElement == element) { return; }
 
-        Global.AugmentReactionTarget reaction = Global.GetReaction(currentElement, parsedElement);
-        if (reaction == Global.AugmentReactionTarget.None) { return; }
+        Global.AugmentReactionTarget reaction = Global.GetReaction(currentElement, element);
+
+        OutlineController outlineController = GetComponentInChildren<OutlineController>();
+        if (reaction == Global.AugmentReactionTarget.None)
+        {
+            outlineController?.UpdateOutline(.05f, GeneralFunctions.instance.TypeColors[element]);
+            currentElement = element; 
+            return;
+        }
+        else
+        {
+            outlineController?.UpdateOutline(0f, GeneralFunctions.instance.TypeColors[Global.ReactiveType.None]);
+            currentElement = Global.ReactiveType.None;
+            Debug.Log(reaction);
+        }
     }
 }

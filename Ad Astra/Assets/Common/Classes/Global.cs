@@ -113,7 +113,7 @@ public static class Global
 
     public static AugmentReactionTarget GetReaction(ReactiveType aura, ReactiveType trigger)
     {
-        if (aura == trigger)
+        if (aura == trigger || aura == ReactiveType.None)
         {
             return AugmentReactionTarget.None;
         }
