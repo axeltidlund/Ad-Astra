@@ -13,10 +13,18 @@ public class FlittingPhantasm : MeleeWeapon
     protected override void DoPress()
     {
         if (!canUse) return;
+        _lastUse = Time.fixedTime;
 
         List<RaycastHit2D> hits = _hitbox.Angular((int)(weaponData as MeleeWeaponData).coverageAngle, transform, (weaponData as MeleeWeaponData).radius);
         Debug.Log(hits.Count);
 
-        _lastUse = Time.fixedTime;
+        foreach (RaycastHit2D hit in hits)
+        {
+            Damageable damageable = hit.rigidbody.gameObject.GetComponent<Damageable>();
+            if (damageable != null )
+            {
+                damageable.Damage(weaponData.damage, weaponData.reactiveType, transform.right.normalized * weaponData.knockbackStrength, weaponData.knockbackTime);
+            }
+        }
     }
 }

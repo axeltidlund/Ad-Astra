@@ -17,7 +17,7 @@ MonoBehaviour:
   damage: 14
   attackRate: 4
   knockback: 15
-  knockbackStrength: 15
+  knockbackStrength: 4
   knockbackTime: 0.15
   isAutoUse: 1
   gunPrefab: {fileID: 3457855381291784491, guid: 7d1805a72ac107848919c91f039d27ba, type: 3}
@@ -28,4 +28,4 @@ MonoBehaviour:
   shakeAmp: 1.5
   shootSound: {fileID: 8300000, guid: 6d0dc0f806fb6de4584285cc7fd8e43f, type: 3}
   coverageAngle: 90
-  radius: 5
+  radius: 2

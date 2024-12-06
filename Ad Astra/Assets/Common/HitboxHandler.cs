@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class HitboxHandler : MonoBehaviour
@@ -10,21 +12,26 @@ public class HitboxHandler : MonoBehaviour
         LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
 
         List<RaycastHit2D> hits = new List<RaycastHit2D>();
+        HashSet<GameObject> uniqueObjects = new HashSet<GameObject>();
 
         int extreme = (int)(angle / 2);
 
         for (int i = -extreme; i < extreme; i += step)
         {
-            Vector3 dir = Quaternion.AngleAxis(i, origin.up) * origin.forward;
-            RaycastHit2D hit = Physics2D.CircleCast(transform.position, step, dir, radius, hitLayers);
-            Debug.DrawRay(transform.position, dir, Color.green, 1f, true);
-            Debug.Log(dir);
+            Vector2 dir = (Vector2)(origin.rotation * Quaternion.Euler(0, 0, i) * Vector3.right);
+            RaycastHit2D[] angleHits = Physics2D.CircleCastAll(transform.position, step, dir, radius, hitLayers);
+            Debug.DrawRay(transform.position, dir * radius, Color.green, 1f);
 
-            if (!hit) continue;
-            if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Enemies") && hit.collider.gameObject.tag == "Enemy" && hits.FindIndex(go => go.collider == hit.collider) == -1)
+            foreach (RaycastHit2D hit in angleHits)
             {
-                hits.Add(hit);
-                Debug.Log(hit.collider.gameObject);
+                if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
+                    hit.collider.CompareTag("Enemy") && hit.rigidbody != null)
+                {
+                    if (uniqueObjects.Add(hit.rigidbody.gameObject))
+                    {
+                        hits.Add(hit);
+                    }
+                }
             }
         }
 
