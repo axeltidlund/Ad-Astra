@@ -6,4 +6,5 @@ using UnityEngine;
 public class MeleeWeaponData : WeaponData
 {
     public float coverageAngle;
+    public float radius;
 }

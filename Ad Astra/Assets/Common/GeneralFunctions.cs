@@ -79,7 +79,7 @@ public class GeneralFunctions : MonoBehaviour
         GameObject go = Instantiate(audioPrefab, _transform.position, Quaternion.identity);
         AudioSource source = go.GetComponent<AudioSource>();
         source.clip = clip;
-        source.volume = volume;
+        source.volume = volume * .1f;
         source.loop = false;
         source.Play();
         Destroy(go, clip.length);

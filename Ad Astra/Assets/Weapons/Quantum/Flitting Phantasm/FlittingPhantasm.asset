@@ -20,11 +20,12 @@ MonoBehaviour:
   knockbackStrength: 15
   knockbackTime: 0.15
   isAutoUse: 1
-  gunPrefab: {fileID: 0}
+  gunPrefab: {fileID: 3457855381291784491, guid: 7d1805a72ac107848919c91f039d27ba, type: 3}
   reactiveType: 1
   rarity: 2
   shakeDuration: 0.2
   shakeSpeed: 4
-  shakeAmp: 2
-  shootSound: {fileID: 0}
+  shakeAmp: 1.5
+  shootSound: {fileID: 8300000, guid: 6d0dc0f806fb6de4584285cc7fd8e43f, type: 3}
   coverageAngle: 90
+  radius: 5
