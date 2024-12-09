@@ -28,4 +28,4 @@ MonoBehaviour:
   shakeAmp: 1.5
   shootSound: {fileID: 8300000, guid: 6d0dc0f806fb6de4584285cc7fd8e43f, type: 3}
   coverageAngle: 90
-  radius: 2
+  radius: 1.5

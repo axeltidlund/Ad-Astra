@@ -19,7 +19,7 @@ public class HitboxHandler : MonoBehaviour
         for (int i = -extreme; i < extreme; i += step)
         {
             Vector2 dir = (Vector2)(origin.rotation * Quaternion.Euler(0, 0, i) * Vector3.right);
-            RaycastHit2D[] angleHits = Physics2D.CircleCastAll(transform.position, step, dir, radius, hitLayers);
+            RaycastHit2D[] angleHits = Physics2D.CircleCastAll(transform.position, 0.1f, dir.normalized, radius, hitLayers);
             Debug.DrawRay(transform.position, dir * radius, Color.green, 1f);
 
             foreach (RaycastHit2D hit in angleHits)

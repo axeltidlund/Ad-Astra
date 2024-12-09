@@ -16,7 +16,6 @@ public class FlittingPhantasm : MeleeWeapon
         _lastUse = Time.fixedTime;
 
         List<RaycastHit2D> hits = _hitbox.Angular((int)(weaponData as MeleeWeaponData).coverageAngle, transform, (weaponData as MeleeWeaponData).radius);
-        Debug.Log(hits.Count);
 
         foreach (RaycastHit2D hit in hits)
         {
