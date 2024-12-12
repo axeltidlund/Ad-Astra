@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameLoop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public UnityEvent<string, string> stateChanged;
+
+    private string _currentState = "INTERMISSION";
+    private float _currentStateTimer = 0f;
+
+    public void SetState(string newState) {
+        stateChanged.Invoke(newState, _currentState);
+
+        _currentState = newState;
+        _currentStateTimer = 0f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        _currentStateTimer += Time.deltaTime;
     }
 }
