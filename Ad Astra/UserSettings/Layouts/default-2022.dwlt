@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1512
     height: 916
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -246,15 +246,15 @@ MonoBehaviour:
     y: 556
     width: 1118
     height: 310
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 13}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1977,7 +1977,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 31748
+  m_LastSelectedObjectID: 31760
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2079,7 +2079,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -2149,7 +2149,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 90faffff047c0000
+      m_ExpandedIDs: f8ecffffcefaffff107c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2607,9 +2607,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -19.007954, y: 9.362773, z: 0.0033704988}
+    m_Target: {x: -6.9007506, y: 1.8261397, z: -0.020664684}
     speed: 2
-    m_Value: {x: -19.000658, y: 9.361562, z: 0.003297972}
+    m_Value: {x: -6.9007506, y: 1.8261397, z: -0.020664684}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2659,9 +2659,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.663016
+    m_Target: 12.066506
     speed: 2
-    m_Value: 9.670269
+    m_Value: 12.066506
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2731,7 +2731,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Entities/Player/Scripts
+    - Assets/Common
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2739,16 +2739,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Entities/Player/Scripts
+  - Assets/Common
   m_LastFoldersGridSize: 71
   m_LastProjectPath: /Users/axeltidlund/Documents/GitHub/Ad-Astra/Ad Astra
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 98820000
-    m_LastClickedID: 33432
-    m_ExpandedIDs: 0000000092800000948000009680000098800000b880000000ca9a3bffffff7f
+    m_SelectedIDs: e4800000
+    m_LastClickedID: 32996
+    m_ExpandedIDs: 00000000e2800000e4800000e6800000e88000000c8100005681000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2776,7 +2776,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092800000948000009680000098800000
+    m_ExpandedIDs: 00000000e2800000e4800000e6800000e8800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2801,9 +2801,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: a6810000
+    m_LastClickedInstanceID: 33190
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000928e0000a8b10000b202000010e50000247f00007a020000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2853,9 +2853,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 681
-    width: 1419
-    height: 318
+    y: 652
+    width: 1117
+    height: 289
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
