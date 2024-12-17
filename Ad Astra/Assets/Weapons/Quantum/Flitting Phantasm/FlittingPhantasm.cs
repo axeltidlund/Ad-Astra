@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlittingPhantasm : MeleeWeapon
 {
     private HitboxHandler _hitbox;
+    public Animator animator;
     private void Awake()
     {
         isEquipped = true;
@@ -14,6 +15,8 @@ public class FlittingPhantasm : MeleeWeapon
     {
         if (!canUse) return;
         _lastUse = Time.fixedTime;
+
+        animator.SetTrigger("Swing");
 
         List<RaycastHit2D> hits = _hitbox.Angular((int)(weaponData as MeleeWeaponData).coverageAngle, transform, (weaponData as MeleeWeaponData).radius);
 

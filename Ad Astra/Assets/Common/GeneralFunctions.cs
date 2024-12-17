@@ -8,7 +8,9 @@ public class GeneralFunctions : MonoBehaviour
 {
     public static GeneralFunctions instance;
     public GameObject player;
+
     public GameObject indicator;
+    public GameObject textIndicator;
 
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
@@ -66,6 +68,14 @@ public class GeneralFunctions : MonoBehaviour
         
         DamageIndicator di = go.GetComponent<DamageIndicator>();
         di.Setup(damage.ToString(), duration);
+    }
+    public void SpawnTextIndicator(Vector2 position, string text, float duration)
+    {
+        GameObject go = Instantiate(textIndicator);
+        go.transform.position = position + new Vector2(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f));
+
+        DamageIndicator di = go.GetComponent<DamageIndicator>();
+        di.Setup(text, duration);
     }
     public void ShakeCamera(float duration, float amplitude, float frequency)
     {

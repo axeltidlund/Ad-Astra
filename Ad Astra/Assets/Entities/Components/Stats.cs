@@ -45,6 +45,8 @@ public class Stats : MonoBehaviour
             outlineController?.UpdateOutline(0f, GeneralFunctions.instance.TypeColors[Global.ReactiveType.None]);
             currentElement = Global.ReactiveType.None;
             Debug.Log(reaction);
+
+            GeneralFunctions.instance.SpawnTextIndicator(transform.position, reaction.ToString(), 2f);
         }
     }
 }
