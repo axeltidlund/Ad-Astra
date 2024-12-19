@@ -16,7 +16,7 @@ public class Level : MonoBehaviour
     }
 
     public void GiveXP(float amount) {
-        xpChangedEvent.Invoke(_xp + amount, _xp);
+        xpChangedEvent.Invoke(Mathf.Min(1, (_xp + amount) / RequiredXPForLevel(_level)), Mathf.Min(1, _xp / RequiredXPForLevel(_level)));
         _xp += amount;
         if (_xp >= RequiredXPForLevel(_level)) {
             SetLevel(_level + 1);

@@ -548,10 +548,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelChangedEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1264756040}
+        m_TargetAssemblyTypeName: InterfaceHandler, Assembly-CSharp
+        m_MethodName: LevelChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   xpChangedEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1264756040}
+        m_TargetAssemblyTypeName: InterfaceHandler, Assembly-CSharp
+        m_MethodName: XPChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &368622740
 GameObject:
   m_ObjectHideFlags: 0
@@ -12120,7 +12144,7 @@ Camera:
     x: 0
     y: 0
     width: 1
-    height: 0.999747
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -27419,6 +27443,7 @@ GameObject:
   - component: {fileID: 1264756038}
   - component: {fileID: 1264756037}
   - component: {fileID: 1264756036}
+  - component: {fileID: 1264756040}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -27510,6 +27535,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1264756040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264756035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23f6e2aa87744a888201dcbff9562de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpSlider: {fileID: 1623756947}
+  levelText: {fileID: 794906993}
 --- !u!43 &1280054613
 Mesh:
   m_ObjectHideFlags: 0
