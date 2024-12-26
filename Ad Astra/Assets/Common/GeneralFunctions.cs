@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class GeneralFunctions : MonoBehaviour
 {
+    public bool visualEffectsEnabled = true;
     public static GeneralFunctions instance;
     public GameObject player;
 
@@ -63,6 +64,7 @@ public class GeneralFunctions : MonoBehaviour
 
     public void SpawnDamageIndicator(Vector2 position, float damage, float duration)
     {
+        if (instance.visualEffectsEnabled == false) { return; }
         GameObject go = Instantiate(indicator);
         go.transform.position = position + new Vector2(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f));
         
@@ -71,6 +73,7 @@ public class GeneralFunctions : MonoBehaviour
     }
     public void SpawnTextIndicator(Vector2 position, string text, float duration)
     {
+        if (instance.visualEffectsEnabled == false) { return; }
         GameObject go = Instantiate(textIndicator);
         go.transform.position = position + new Vector2(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f));
 
@@ -79,6 +82,7 @@ public class GeneralFunctions : MonoBehaviour
     }
     public void ShakeCamera(float duration, float amplitude, float frequency)
     {
+        if (instance.visualEffectsEnabled == false) { return; }
         shakeDuration = duration;
         noise.m_AmplitudeGain = amplitude;
         noise.m_FrequencyGain = frequency;
@@ -93,5 +97,17 @@ public class GeneralFunctions : MonoBehaviour
         source.loop = false;
         source.Play();
         Destroy(go, clip.length);
+    }
+
+    public float ApplyTransformativeReactionMultiplier(float damage, Global.AugmentReactionTarget reaction) {
+        if (reaction == Global.AugmentReactionTarget.None) { return damage; }
+
+        switch (reaction)
+        {
+            case Global.AugmentReactionTarget.Fusion:
+                return damage * 2;
+            default:
+                return damage;
+        }
     }
 }

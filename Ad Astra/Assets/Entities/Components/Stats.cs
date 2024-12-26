@@ -26,10 +26,10 @@ public class Stats : MonoBehaviour
     public float GetGlobalResistance() { return globalRes; }
     public float GetResistance(string element) { return resistances[element]; }
 
-    public void ApplyElement(Global.ReactiveType element)
+    public Global.AugmentReactionTarget ApplyElement(Global.ReactiveType element)
     {
-        if (element == Global.ReactiveType.None) { return; }
-        if (currentElement == element) { return; }
+        if (element == Global.ReactiveType.None) { return Global.AugmentReactionTarget.None; }
+        if (currentElement == element) { return Global.AugmentReactionTarget.None; }
 
         Global.AugmentReactionTarget reaction = Global.GetReaction(currentElement, element);
 
@@ -38,7 +38,7 @@ public class Stats : MonoBehaviour
         {
             outlineController?.UpdateOutline(.05f, GeneralFunctions.instance.TypeColors[element]);
             currentElement = element; 
-            return;
+            return Global.AugmentReactionTarget.None;
         }
         else
         {
@@ -47,6 +47,7 @@ public class Stats : MonoBehaviour
             Debug.Log(reaction);
 
             GeneralFunctions.instance.SpawnTextIndicator(transform.position, reaction.ToString(), 2f);
+            return reaction;
         }
     }
 }

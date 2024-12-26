@@ -16,7 +16,9 @@ public class FlittingPhantasm : MeleeWeapon
         if (!canUse) return;
         _lastUse = Time.fixedTime;
 
-        animator.SetTrigger("Swing");
+        if (GeneralFunctions.instance.visualEffectsEnabled == true) {
+            animator.SetTrigger("Swing");
+        }
 
         List<RaycastHit2D> hits = _hitbox.Angular((int)(weaponData as MeleeWeaponData).coverageAngle, transform, (weaponData as MeleeWeaponData).radius);
 

@@ -123,7 +123,7 @@ MonoBehaviour:
   - {x: -0.07181066, y: -0.043257773, z: 0}
   m_ShapePathHash: -1110279282
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1374
+  m_InstanceId: -1356
   m_LocalBounds:
     m_Center: {x: 0.016849399, y: 0.714152, z: 0}
     m_Extent: {x: 0.2558475, y: 0.7776749, z: 0}
@@ -448,6 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
+  currentElement: 0
 --- !u!1 &2564966297010169969
 GameObject:
   m_ObjectHideFlags: 0

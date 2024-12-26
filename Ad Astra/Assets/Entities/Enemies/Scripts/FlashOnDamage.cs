@@ -13,6 +13,7 @@ public class FlashOnDamage : MonoBehaviour
     }
     public void Do()
     {
+        if (GeneralFunctions.instance.visualEffectsEnabled == false) { return; }
         StartCoroutine(Flash());
     }
     IEnumerator Flash()

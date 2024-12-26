@@ -43,7 +43,8 @@ public static class Global
         Fission,
         CosmicStorm,
         QuasarPulse,
-        TimeDilation
+        TimeDilation,
+        Supernova
     }
 
     public static Dictionary<ReactiveType, Dictionary<ReactiveType, AugmentReactionTarget>> reactionPaths = new Dictionary<ReactiveType, Dictionary<ReactiveType, AugmentReactionTarget>>()
@@ -63,7 +64,7 @@ public static class Global
                 { ReactiveType.Void, AugmentReactionTarget.DarkMatter },
                 { ReactiveType.Gravity, AugmentReactionTarget.CosmicStorm },
                 { ReactiveType.Quantum, AugmentReactionTarget.Fission },
-                { ReactiveType.Stellar, AugmentReactionTarget.None },
+                { ReactiveType.Stellar, AugmentReactionTarget.Supernova },
             }
         },
         {
@@ -90,7 +91,7 @@ public static class Global
                 { ReactiveType.Gravity, AugmentReactionTarget.Fusion },
                 { ReactiveType.Void, AugmentReactionTarget.Eclipse },
                 { ReactiveType.Quantum, AugmentReactionTarget.QuasarPulse },
-                { ReactiveType.Nebula, AugmentReactionTarget.None },
+                { ReactiveType.Nebula, AugmentReactionTarget.Supernova },
             }
         },
     };

@@ -18,6 +18,7 @@ public class StarcasterProjectile : Projectile
     }
     public override void OnHit()
     {
+        if (!GeneralFunctions.instance.visualEffectsEnabled) { return; }
         GameObject go = Instantiate(explosion, transform.position, Quaternion.identity);
         go.GetComponent<Animator>().SetTrigger("Explode");
         go.GetComponentInChildren<VisualEffect>().SendEvent("Explode");

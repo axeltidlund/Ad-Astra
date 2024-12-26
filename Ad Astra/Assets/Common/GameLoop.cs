@@ -15,6 +15,8 @@ public class GameLoop : StateMachine
         activeState.Setup(this);
         
         state = activeState;
+        SelectState();
+        Debug.Log(state);
     }
     void SelectState()
     {
