@@ -15,7 +15,7 @@ public class OutlineController : MonoBehaviour
     }
     public void UpdateOutline(float width, Color color)
     {
-        if (!GeneralFunctions.instance.visualEffectsEnabled) { return; }
+        if (GeneralFunctions.instance.visualEffectsEnabled == false) { return; }
         outlineWidth = width;
         outlineColor = color;
 
