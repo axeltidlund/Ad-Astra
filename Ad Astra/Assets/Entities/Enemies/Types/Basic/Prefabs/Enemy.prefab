@@ -123,7 +123,7 @@ MonoBehaviour:
   - {x: -0.07181066, y: -0.043257773, z: 0}
   m_ShapePathHash: -1110279282
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1356
+  m_InstanceId: -1416
   m_LocalBounds:
     m_Center: {x: 0.016849399, y: 0.714152, z: 0}
     m_Extent: {x: 0.2558475, y: 0.7776749, z: 0}
@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 4530689799069816895}
   - component: {fileID: 6221205640971817260}
   - component: {fileID: 7566070583208126401}
+  - component: {fileID: 8838574901145275535}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -292,7 +293,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 50
-  m_LinearDrag: 0
+  m_LinearDrag: 150
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -449,6 +450,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
   currentElement: 0
+--- !u!114 &8838574901145275535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500341071641414854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
 --- !u!1 &2564966297010169969
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSeePlayer: 0
+  nextWaypointDistance: 3
 --- !u!58 &6414925196752340103
 CircleCollider2D:
   m_ObjectHideFlags: 0

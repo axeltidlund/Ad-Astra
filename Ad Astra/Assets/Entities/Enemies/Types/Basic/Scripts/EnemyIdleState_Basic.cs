@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyIdleState_Basic : State
 {
-    public bool canSeePlayer = false;
+    public bool canSeePlayer = true;
     public override void Enter()
     {
 
