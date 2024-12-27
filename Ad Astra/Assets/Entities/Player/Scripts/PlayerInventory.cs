@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,7 @@ public class PlayerInventory : MonoBehaviour
 
     private int _currentWeaponIndex = 0;
     private GameObject _currentWeaponPrefab;
+    private Dictionary<string, int> _ammo;
 
     public Transform weaponHolder;
     public Transform aim;
@@ -29,13 +31,26 @@ public class PlayerInventory : MonoBehaviour
     }
     private void SpawnWeapon(int i)
     {
-        _currentWeaponIndex = i;
         if (_currentWeaponPrefab != null)
         {
+            RangedWeapon previousWeaponHandler = _currentWeaponPrefab.GetComponent<RangedWeapon>();
+            if (previousWeaponHandler != null) {
+                _ammo[weapons[_currentWeaponIndex].displayName] = previousWeaponHandler.ammo;
+            }
             Destroy(_currentWeaponPrefab);
         }
+        _currentWeaponIndex = i;
         if (weapons[_currentWeaponIndex] == null) return;
         _currentWeaponPrefab = Instantiate(weapons[_currentWeaponIndex].gunPrefab, weaponHolder);
+
+        RangedWeapon weaponHandler = _currentWeaponPrefab.GetComponent<RangedWeapon>();
+        if (weaponHandler == null) { return; }
+
+        RangedWeaponData weaponData = (RangedWeaponData)weapons[_currentWeaponIndex];
+        Debug.Log(weaponData);
+        string weaponName = weaponData.displayName;
+        int currentAmmo = _ammo.ContainsKey(weaponName) ? _ammo[weaponName] : weaponData.magazineAmount;
+        weaponHandler.UpdateAmmo(currentAmmo, weaponData.magazineAmount);
     }
 
     public void HandleWeaponPress(bool started)
