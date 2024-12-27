@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Level : MonoBehaviour
 {
-    private int _level = 0;
+    private int _level = 1;
     private float _xp = 0f;
 
     public UnityEvent<int, int> levelChangedEvent;
@@ -26,5 +26,7 @@ public class Level : MonoBehaviour
     public void SetLevel(int level) {
         levelChangedEvent.Invoke(level, _level);
         _level = level;
+        xpChangedEvent.Invoke(0f, Mathf.Min(1, _xp / RequiredXPForLevel(_level)));
+        _xp = 0f;
     }
 }

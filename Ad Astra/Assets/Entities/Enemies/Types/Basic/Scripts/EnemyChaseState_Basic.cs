@@ -14,6 +14,7 @@ public class EnemyChaseState_Basic : State
     bool reachedEndOfPath = false;
 
     Seeker seeker;
+    EnemyAim aim;
 
     EnemyStateMachine input_enemy;
     Vector2 direction;
@@ -21,6 +22,7 @@ public class EnemyChaseState_Basic : State
     {
         input_enemy = input as EnemyStateMachine;
         seeker = input_enemy.gameObject.GetComponent<Seeker>();
+        aim = input_enemy.gameObject.GetComponentInChildren<EnemyAim>();
 
         InvokeRepeating("UpdatePath", 0f, .2f);
     }
@@ -35,6 +37,7 @@ public class EnemyChaseState_Basic : State
     }
     public override void Do()
     {
+        aim.UpdateAim(input_enemy.player.transform.position);
         if (path == null)
             return;
 

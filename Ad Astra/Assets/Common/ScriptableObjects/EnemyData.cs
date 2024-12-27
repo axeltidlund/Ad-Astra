@@ -7,4 +7,5 @@ public class EnemyData : EntityData
 {
     public float attackSpeed;
     public float detectionRange;
+    public float xp;
 }

@@ -7,7 +7,7 @@ public class GameActiveState : State
     public GameObject spawnTransforms;
     public GameObject enemyPrefab; // this needs to be changed
     private float spawnTimer = 0f;
-    public float maxSpawnTime = 15f;
+    public float maxSpawnTime = 2f;
     public override void Enter()
     {
         Debug.Log("Game Loop is now Active.");

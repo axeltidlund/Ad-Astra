@@ -7,6 +7,8 @@ public class Stats : MonoBehaviour
 {
     public EntityData entityData;
 
+    Damageable damageable;
+
     private float globalRes;
     private Dictionary<string, float> resistances = new Dictionary<string, float>();
 

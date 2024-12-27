@@ -19,3 +19,4 @@ MonoBehaviour:
   globalRes: 1
   attackSpeed: 2
   detectionRange: 10
+  xp: 5

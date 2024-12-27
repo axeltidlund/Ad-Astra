@@ -820,8 +820,7 @@ public class AstarPath : VersionedMonoBehaviour {
 #endif
 
 	/// <summary>
-	/// Prints path results to the log. What it prints can be controled using <see cref="logPathResults"/>.
-	/// See: <see cref="logPathResults"/>
+	/// Prints path results to the log. What it prints can be controled using
 	/// See: PathLog
 	/// See: Pathfinding.Path.DebugString
 	/// </summary>
@@ -833,8 +832,6 @@ public class AstarPath : VersionedMonoBehaviour {
 				inGameDebugPath = debug;
 			} else if (path.error) {
 				Debug.LogWarning(debug);
-			} else {
-				Debug.Log(debug);
 			}
 		}
 	}

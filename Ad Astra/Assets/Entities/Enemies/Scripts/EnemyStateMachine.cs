@@ -13,7 +13,7 @@ public class EnemyStateMachine : StateMachine
     public GameObject player;
     public EnemyData enemyData;
 
-    void Start()
+    void Awake()
     {
         idleState.Setup(this);
         chaseState.Setup(this);
@@ -21,6 +21,9 @@ public class EnemyStateMachine : StateMachine
 
         state = idleState;
         player = FindAnyObjectByType<PlayerStateMachine>().gameObject;
+
+        Damageable damageable = GetComponent<Damageable>();
+        damageable.Setup(enemyData.maxHealth);
     }
     void SelectState()
     {
@@ -44,5 +47,12 @@ public class EnemyStateMachine : StateMachine
     private void FixedUpdate()
     {
         state?.FixedDo();
+    }
+    
+    public void OnDamage(float newHealth) {
+        if (newHealth <= 0) {
+            GeneralFunctions.instance.RewardXP(enemyData.xp);
+            Destroy(gameObject); // CHANGE
+        }
     }
 }

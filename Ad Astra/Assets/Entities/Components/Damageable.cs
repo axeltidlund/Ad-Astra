@@ -7,7 +7,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Moveable))]
 public class Damageable : MonoBehaviour
 {
-    public UnityEvent onDamage;
+    public UnityEvent<float> onDamage;
 
     public Vector2 impulse;
     public float impulseTime = 0f;
@@ -27,13 +27,13 @@ public class Damageable : MonoBehaviour
 
     public void Damage(float damage, Global.ReactiveType element, Vector2 _impulse, float _impulseDuration)
     {
-        onDamage.Invoke();
         float finalDamage = damage * stats.GetGlobalResistance() * stats.GetResistance(System.Enum.GetName(typeof(Global.ReactiveType), element));
         Global.AugmentReactionTarget reaction = stats.ApplyElement(element);
         finalDamage = GeneralFunctions.instance.ApplyTransformativeReactionMultiplier(finalDamage, reaction);
 
         health = Mathf.Max(0, health - finalDamage);
         GeneralFunctions.instance.SpawnDamageIndicator(transform.position, finalDamage, .5f);
+        onDamage.Invoke(health);
 
         if (_impulse == Vector2.zero || _impulseDuration <= 0) { return; }
         moveable.locked = true;

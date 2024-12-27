@@ -110,4 +110,9 @@ public class GeneralFunctions : MonoBehaviour
                 return damage;
         }
     }
+
+    public void RewardXP(float amount) {
+        Level level = player.GetComponent<Level>();
+        level.GiveXP(amount);
+    }
 }
