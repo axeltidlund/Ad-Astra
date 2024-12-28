@@ -13,12 +13,9 @@ public class Starcaster : RangedWeapon
     protected override void DoPress()
     {
         if (!canUse) return;
+        base.DoPress();
         _shooter.FireProjectile(weaponData, firePoint.transform);
         _lastUse = Time.fixedTime;
         playerAim.Recoil((weaponData as RangedWeaponData).recoil, 1f);
-    }
-    protected override void Reload()
-    {
-        
     }
 }

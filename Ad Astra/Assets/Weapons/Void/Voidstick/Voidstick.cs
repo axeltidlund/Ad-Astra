@@ -13,6 +13,7 @@ public class Voidstick : RangedWeapon
     protected override void DoPress()
     {
         if (!canUse) return;
+        base.DoPress();
 
         for (int i = 0; i < 6; i++)
         {
@@ -21,9 +22,5 @@ public class Voidstick : RangedWeapon
 
         _lastUse = Time.fixedTime;
         playerAim.Recoil((weaponData as RangedWeaponData).recoil, 1f);
-    }
-    protected override void Reload()
-    {
-        
     }
 }

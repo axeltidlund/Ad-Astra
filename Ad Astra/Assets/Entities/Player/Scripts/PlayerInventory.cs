@@ -12,7 +12,7 @@ public class PlayerInventory : MonoBehaviour
 
     private int _currentWeaponIndex = 0;
     private GameObject _currentWeaponPrefab;
-    private Dictionary<string, int> _ammo;
+    private Dictionary<string, int> _ammo = new Dictionary<string, int>();
 
     public Transform weaponHolder;
     public Transform aim;
@@ -47,7 +47,6 @@ public class PlayerInventory : MonoBehaviour
         if (weaponHandler == null) { return; }
 
         RangedWeaponData weaponData = (RangedWeaponData)weapons[_currentWeaponIndex];
-        Debug.Log(weaponData);
         string weaponName = weaponData.displayName;
         int currentAmmo = _ammo.ContainsKey(weaponName) ? _ammo[weaponName] : weaponData.magazineAmount;
         weaponHandler.UpdateAmmo(currentAmmo, weaponData.magazineAmount);
