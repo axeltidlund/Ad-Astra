@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a8c8957347bf642ad370fefe8cdd08, type: 3}
+  m_Name: Tetherstorm
+  m_EditorClassIdentifier: 
+  displayName: Tetherstorm
+  description: Rapidly fires bullets that are attracted to eachother.
+  damage: 6
+  attackRate: 50
+  knockback: 2
+  knockbackStrength: 5
+  knockbackTime: 0.1
+  isAutoUse: 1
+  gunPrefab: {fileID: 1953863327994511009, guid: ca43d58f0ce28b2428ade049ed06aba1, type: 3}
+  reactiveType: 4
+  rarity: 2
+  shakeDuration: 0.15
+  shakeSpeed: 2
+  shakeAmp: 6
+  shootSound: {fileID: 8300000, guid: bf79e34c4489345d881ff5fee3aae752, type: 3}
+  magazineAmount: 80
+  reloadTime: 2
+  recoil: 1
+  shotRange: 80
+  spread: 15

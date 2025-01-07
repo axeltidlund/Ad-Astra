@@ -9,8 +9,6 @@ public class EnemyAim : MonoBehaviour
 
     public float recoilTime = 0;
     public float recoilStrength = 0;
-        
-    private float currentRecoil = 0;
 
     public void UpdateAim(Vector2 targetPosition) {
         Vector3 aimDirection = (targetPosition - (Vector2)transform.position).normalized;
