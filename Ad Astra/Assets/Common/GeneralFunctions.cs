@@ -115,4 +115,21 @@ public class GeneralFunctions : MonoBehaviour
         Level level = player.GetComponent<Level>();
         level.GiveXP(amount);
     }
+
+    public List<Rigidbody2D> tetherstormBullets = new List<Rigidbody2D>();
+    public float forceMultiplier = 15f;
+    public void AttractTetherbullet(Rigidbody2D bullet) {
+        Vector2 totalForce = Vector2.zero;
+
+        foreach (Rigidbody2D otherBullet in tetherstormBullets)
+        {
+            if (otherBullet == null) { continue; }
+            if (otherBullet == bullet) { continue; }
+            Vector2 force = (otherBullet.transform.position - bullet.transform.position).normalized;
+            totalForce += force;
+        }
+
+        totalForce = totalForce.normalized * forceMultiplier;
+        bullet.velocity += totalForce * Time.deltaTime;
+    }
 }

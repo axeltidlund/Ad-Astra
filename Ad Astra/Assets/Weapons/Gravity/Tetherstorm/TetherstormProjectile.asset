@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411b4a58f4ac50a4cba4ddb33fafc59a, type: 3}
   m_Name: TetherstormProjectile
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1871063228421884624, guid: f6951a912ccc0f849b78bee4cfaae151, type: 3}
+  projectilePrefab: {fileID: 9134288023586977824, guid: 5b272045f675c48b1ae5d3d6a13c1409, type: 3}
   travelSpeed: 180
   timeLeft: 5
   radius: 0.75

@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Tetherstorm
   description: Rapidly fires bullets that are attracted to eachother.
-  damage: 6
+  damage: 0.2
   attackRate: 50
   knockback: 2
   knockbackStrength: 5
   knockbackTime: 0.1
   isAutoUse: 1
-  gunPrefab: {fileID: 1953863327994511009, guid: ca43d58f0ce28b2428ade049ed06aba1, type: 3}
+  gunPrefab: {fileID: 3124119146185467159, guid: 971418a286f85421d96bdcfa030eb07c, type: 3}
   reactiveType: 4
   rarity: 2
-  shakeDuration: 0.15
+  shakeDuration: 0.1
   shakeSpeed: 2
-  shakeAmp: 6
-  shootSound: {fileID: 8300000, guid: bf79e34c4489345d881ff5fee3aae752, type: 3}
+  shakeAmp: 1
+  shootSound: {fileID: 8300000, guid: ef3c91defd493a747adb568b72e29444, type: 3}
   magazineAmount: 80
   reloadTime: 2
   recoil: 1
