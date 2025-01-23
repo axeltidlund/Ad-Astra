@@ -38,7 +38,7 @@ public class Stats : MonoBehaviour
         OutlineController outlineController = GetComponentInChildren<OutlineController>();
         if (reaction == Global.AugmentReactionTarget.None)
         {
-            outlineController?.UpdateOutline(.05f, GeneralFunctions.instance.TypeColors[element]);
+            outlineController?.UpdateOutline(.0025f, GeneralFunctions.instance.TypeColors[element]);
             currentElement = element; 
             return Global.AugmentReactionTarget.None;
         }

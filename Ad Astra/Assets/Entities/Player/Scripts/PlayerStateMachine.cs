@@ -15,6 +15,9 @@ public class PlayerStateMachine : StateMachine
 
     InputComponent inputComponent;
 
+    public Rigidbody2D rb;
+    public Animator animator;
+
     void Start()
     {
         idleState.Setup(this);
@@ -44,6 +47,10 @@ public class PlayerStateMachine : StateMachine
             SelectState();
         }
         state.Do();
+
+        animator.SetFloat("Vertical", movementInput.y);
+        animator.SetFloat("Horizontal", movementInput.x);
+        animator.SetFloat("Magnitude", movementInput.sqrMagnitude);
     }
     private void FixedUpdate()
     {

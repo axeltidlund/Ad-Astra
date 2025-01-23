@@ -12,6 +12,7 @@ public class GeneralFunctions : MonoBehaviour
 
     public GameObject indicator;
     public GameObject textIndicator;
+    public ReactionHandler reactionHandler;
 
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
