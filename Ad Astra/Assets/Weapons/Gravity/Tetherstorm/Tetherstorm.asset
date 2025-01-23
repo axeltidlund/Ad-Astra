@@ -17,7 +17,7 @@ MonoBehaviour:
   damage: 0.4
   attackRate: 35
   knockback: 2
-  knockbackStrength: 5
+  knockbackStrength: 1
   knockbackTime: 0.1
   isAutoUse: 1
   gunPrefab: {fileID: 3124119146185467159, guid: 971418a286f85421d96bdcfa030eb07c, type: 3}
@@ -29,6 +29,6 @@ MonoBehaviour:
   shootSound: {fileID: 8300000, guid: ef3c91defd493a747adb568b72e29444, type: 3}
   magazineAmount: 80
   reloadTime: 2
-  recoil: 1
+  recoil: 15
   shotRange: 80
   spread: 15
