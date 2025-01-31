@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class ReactionHandler : MonoBehaviour
 {
-    [SerializedDictionary("Reaction Name", "Reaction")]
-    public SerializedDictionary<string, Reaction> TypeColors;
+    public Dictionary<string, Reaction> Reactions;
+    private void Awake()
+    {
+        
+    }
 }
