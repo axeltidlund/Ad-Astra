@@ -32,7 +32,8 @@ public class Damageable : MonoBehaviour
         finalDamage = GeneralFunctions.instance.ApplyTransformativeReactionMultiplier(finalDamage, reaction);
 
         health = Mathf.Max(0, health - finalDamage);
-        GeneralFunctions.instance.SpawnDamageIndicator(transform.position, finalDamage, .5f);
+        Debug.Log(finalDamage);
+        GeneralFunctions.instance.SpawnDamageIndicator(transform.position, finalDamage, finalDamage == damage ? .5f : 1f);
         onDamage.Invoke(health);
 
         if (_impulse == Vector2.zero || _impulseDuration <= 0) { return; }

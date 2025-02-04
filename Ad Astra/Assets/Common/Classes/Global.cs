@@ -35,15 +35,12 @@ public static class Global
     {
         None,
         All,
-        Eclipse,
         Fusion,
         BlackHole,
-        DarkMatter,
         Singularity,
         Fission,
         CosmicStorm,
         QuasarPulse,
-        TimeDilation,
         Supernova
     }
 
@@ -53,7 +50,7 @@ public static class Global
             ReactiveType.Quantum, new Dictionary<ReactiveType, AugmentReactionTarget>() 
             {
                 { ReactiveType.Void, AugmentReactionTarget.Singularity },
-                { ReactiveType.Gravity, AugmentReactionTarget.TimeDilation },
+                { ReactiveType.Gravity, AugmentReactionTarget.None },
                 { ReactiveType.Stellar, AugmentReactionTarget.QuasarPulse },
                 { ReactiveType.Nebula, AugmentReactionTarget.Fission },
             } 
@@ -61,7 +58,7 @@ public static class Global
         {
             ReactiveType.Nebula, new Dictionary<ReactiveType, AugmentReactionTarget>()
             {
-                { ReactiveType.Void, AugmentReactionTarget.DarkMatter },
+                { ReactiveType.Void, AugmentReactionTarget.None },
                 { ReactiveType.Gravity, AugmentReactionTarget.CosmicStorm },
                 { ReactiveType.Quantum, AugmentReactionTarget.Fission },
                 { ReactiveType.Stellar, AugmentReactionTarget.Supernova },
@@ -70,9 +67,9 @@ public static class Global
         {
             ReactiveType.Void, new Dictionary<ReactiveType, AugmentReactionTarget>()
             {
-                { ReactiveType.Stellar, AugmentReactionTarget.Eclipse },
+                { ReactiveType.Stellar, AugmentReactionTarget.None },
                 { ReactiveType.Gravity, AugmentReactionTarget.BlackHole },
-                { ReactiveType.Nebula, AugmentReactionTarget.DarkMatter },
+                { ReactiveType.Nebula, AugmentReactionTarget.None },
                 { ReactiveType.Quantum, AugmentReactionTarget.Singularity },
             }
         },
@@ -82,14 +79,14 @@ public static class Global
                 { ReactiveType.Stellar, AugmentReactionTarget.Fusion },
                 { ReactiveType.Void, AugmentReactionTarget.BlackHole },
                 { ReactiveType.Nebula, AugmentReactionTarget.CosmicStorm },
-                { ReactiveType.Quantum, AugmentReactionTarget.TimeDilation },
+                { ReactiveType.Quantum, AugmentReactionTarget.None },
             }
         },
         {
             ReactiveType.Stellar, new Dictionary<ReactiveType, AugmentReactionTarget>()
             {
                 { ReactiveType.Gravity, AugmentReactionTarget.Fusion },
-                { ReactiveType.Void, AugmentReactionTarget.Eclipse },
+                { ReactiveType.Void, AugmentReactionTarget.None },
                 { ReactiveType.Quantum, AugmentReactionTarget.QuasarPulse },
                 { ReactiveType.Nebula, AugmentReactionTarget.Supernova },
             }

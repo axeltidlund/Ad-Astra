@@ -76,7 +76,7 @@ public class GeneralFunctions : MonoBehaviour
     {
         if (instance.visualEffectsEnabled == false) { return; }
         GameObject go = Instantiate(textIndicator);
-        go.transform.position = position + new Vector2(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f));
+        go.transform.position = position + new Vector2(Random.Range(-.5f, .5f) * -1, Random.Range(-.5f, .5f) * -1);
 
         DamageIndicator di = go.GetComponent<DamageIndicator>();
         di.Setup(text, duration);

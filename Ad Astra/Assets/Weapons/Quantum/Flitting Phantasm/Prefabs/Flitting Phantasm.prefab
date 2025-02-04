@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3161985328982437408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353223049157974908}
+  m_Layer: 0
+  m_Name: SlashPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1353223049157974908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161985328982437408}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.27328485, w: 0.96193314}
+  m_LocalPosition: {x: 0.165, y: 0.367, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3747989590415039106}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -31.72}
 --- !u!1 &3457855381291784491
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +63,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8012626404017070087}
+  - {fileID: 1353223049157974908}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8579618426028305096
@@ -48,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 3c4b8659471cd4f41b9ee8db0bb88a2f, type: 2}
   animator: {fileID: 1197167506957095407}
+  effect: {fileID: 433833954508505034, guid: 7b37209708b331b4daa34a9c79726e8f, type: 3}
+  slashPoint: {fileID: 1353223049157974908}
 --- !u!114 &-6158616902892350356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +190,7 @@ Animator:
   m_GameObject: {fileID: 5169720564838699977}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e89fbd060c360814f8f8d6564c91d0e6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3c5c254f2657cd046901dc4bcf1f506b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

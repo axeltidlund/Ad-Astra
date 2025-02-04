@@ -6,6 +6,8 @@ public class FlittingPhantasm : MeleeWeapon
 {
     private HitboxHandler _hitbox;
     public Animator animator;
+    public GameObject effect;
+    public Transform slashPoint;
     private void Awake()
     {
         isEquipped = true;
@@ -18,6 +20,8 @@ public class FlittingPhantasm : MeleeWeapon
 
         if (GeneralFunctions.instance.visualEffectsEnabled == true) {
             animator.SetTrigger("Swing");
+
+            GameObject go = Instantiate(effect, slashPoint.position, Quaternion.identity);
         }
 
         List<RaycastHit2D> hits = _hitbox.Angular((int)(weaponData as MeleeWeaponData).coverageAngle, transform, (weaponData as MeleeWeaponData).radius);
