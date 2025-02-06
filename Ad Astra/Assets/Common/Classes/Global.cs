@@ -49,8 +49,8 @@ public static class Global
         { 
             ReactiveType.Quantum, new Dictionary<ReactiveType, AugmentReactionTarget>() 
             {
-                { ReactiveType.Void, AugmentReactionTarget.Singularity },
-                { ReactiveType.Gravity, AugmentReactionTarget.None },
+                { ReactiveType.Void, AugmentReactionTarget.None },
+                { ReactiveType.Gravity, AugmentReactionTarget.Singularity },
                 { ReactiveType.Stellar, AugmentReactionTarget.QuasarPulse },
                 { ReactiveType.Nebula, AugmentReactionTarget.Fission },
             } 
@@ -70,7 +70,7 @@ public static class Global
                 { ReactiveType.Stellar, AugmentReactionTarget.None },
                 { ReactiveType.Gravity, AugmentReactionTarget.BlackHole },
                 { ReactiveType.Nebula, AugmentReactionTarget.None },
-                { ReactiveType.Quantum, AugmentReactionTarget.Singularity },
+                { ReactiveType.Quantum, AugmentReactionTarget.None },
             }
         },
         {
@@ -79,7 +79,7 @@ public static class Global
                 { ReactiveType.Stellar, AugmentReactionTarget.Fusion },
                 { ReactiveType.Void, AugmentReactionTarget.BlackHole },
                 { ReactiveType.Nebula, AugmentReactionTarget.CosmicStorm },
-                { ReactiveType.Quantum, AugmentReactionTarget.None },
+                { ReactiveType.Quantum, AugmentReactionTarget.Singularity },
             }
         },
         {

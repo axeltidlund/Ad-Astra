@@ -10,8 +10,10 @@ public class PlayerAim : MonoBehaviour
 
     public float recoilTime = 0;
     public float recoilStrength = 0;
-        
+
     private float currentRecoil = 0;
+
+    public Vector3 readAim { get; private set; } = Vector3.zero;
 
     Vector3 GetAim()
     {
@@ -41,6 +43,7 @@ public class PlayerAim : MonoBehaviour
         recoilStrength = Mathf.Min(359, strength);
 
         Vector3 aim = GetAim();
+        readAim = aim;
         currentRecoil = (recoilStrength + oldRecoil) * weaponHolder.localScale.y;
         aimTransform.eulerAngles = aim + new Vector3(0, 0, currentRecoil);
     }
@@ -48,6 +51,7 @@ public class PlayerAim : MonoBehaviour
     void Update()
     {
         Vector3 aim = GetAim();
+        readAim = aim;
 
         if (recoilTime <= 0)
         {

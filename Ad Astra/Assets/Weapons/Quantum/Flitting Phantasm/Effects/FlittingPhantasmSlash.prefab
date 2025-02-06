@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4962557673382291452}
-  - component: {fileID: 8048880321349839122}
+  - component: {fileID: 8939899034864360555}
   m_Layer: 0
   m_Name: FlittingPhantasmSlash
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 6207529498933954591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8048880321349839122
+--- !u!114 &8939899034864360555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0fbbacdcba95f4189e1a3164a4be97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.26
+  time: 0.4
 --- !u!1 &6449495577864671749
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ Animator:
   m_GameObject: {fileID: 6449495577864671749}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 7258148184877754602, guid: c492e936ced32824a8e6503166b9efc2, type: 3}
+  m_Controller: {fileID: 9100000, guid: d1d05d694ad2857419d07f721d25526e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
