@@ -100,7 +100,7 @@ public class GeneralFunctions : MonoBehaviour
         Destroy(go, clip.length);
     }
 
-    public float ApplyTransformativeReactionMultiplier(float damage, Global.AugmentReactionTarget reaction) {
+    public float TriggerReaction(float damage, Global.AugmentReactionTarget reaction, Transform transform) {
         if (reaction == Global.AugmentReactionTarget.None) { return damage; }
 
         switch (reaction)
@@ -108,6 +108,7 @@ public class GeneralFunctions : MonoBehaviour
             case Global.AugmentReactionTarget.Fusion:
                 return damage * 2;
             default:
+                reactionHandler.Trigger(reaction, transform);
                 return damage;
         }
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.Mathematics;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class HitboxHandler : MonoBehaviour
@@ -31,6 +32,31 @@ public class HitboxHandler : MonoBehaviour
                     {
                         hits.Add(hit);
                     }
+                }
+            }
+        }
+
+        return hits;
+    }
+
+    public List<RaycastHit2D> Rect(int angle, Transform origin, float radius, float length)
+    {
+        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
+        List<RaycastHit2D> hits = new List<RaycastHit2D>();
+        HashSet<GameObject> uniqueObjects = new HashSet<GameObject>();
+
+        Vector2 dir = (Vector2)(origin.rotation * Vector3.right);
+        RaycastHit2D[] angleHits = Physics2D.CircleCastAll(transform.position, radius, dir.normalized, radius, hitLayers);
+        Debug.DrawRay(transform.position, dir * length, Color.green, 1f);
+
+        foreach (RaycastHit2D hit in angleHits)
+        {
+            if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
+                hit.collider.CompareTag("Enemy") && hit.rigidbody != null)
+            {
+                if (uniqueObjects.Add(hit.rigidbody.gameObject))
+                {
+                    hits.Add(hit);
                 }
             }
         }

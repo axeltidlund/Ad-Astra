@@ -11,9 +11,10 @@ public abstract class RangedWeapon : Weapon
     protected virtual void Reload() { // add delay
         ammo = magazineAmount;
     }
-    protected override void DoPress() {
-        if (ammo <= 0) { Reload(); return; }
+    protected override bool DoPress() {
+        if (ammo <= 0) { Reload(); return false; }
         ammo -= 1;
+        return true;
     }
     
     public void UpdateAmmo(int amount, int max) {

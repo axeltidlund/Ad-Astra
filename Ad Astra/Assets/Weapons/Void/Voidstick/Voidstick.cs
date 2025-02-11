@@ -10,10 +10,10 @@ public class Voidstick : RangedWeapon
         isEquipped = true;
         _shooter = GetComponent<ProjectileShooter>();
     }
-    protected override void DoPress()
+    protected override bool DoPress()
     {
-        if (!canUse) return;
-        base.DoPress();
+        if (!canUse) return false;
+        if (base.DoPress() == false) return false;
 
         for (int i = 0; i < 6; i++)
         {
@@ -22,5 +22,6 @@ public class Voidstick : RangedWeapon
 
         _lastUse = Time.fixedTime;
         playerAim.Recoil((weaponData as RangedWeaponData).recoil, 1f);
+        return true;
     }
 }

@@ -10,12 +10,13 @@ public class Tetherstorm : RangedWeapon
         isEquipped = true;
         _shooter = GetComponent<ProjectileShooter>();
     }
-    protected override void DoPress()
+    protected override bool DoPress()
     {
-        if (!canUse) return;
-        base.DoPress();
+        if (!canUse) return false;
+        if (base.DoPress() == false) return false;
         _shooter.FireProjectile(weaponData, firePoint.transform);
         _lastUse = Time.fixedTime;
         playerAim.Recoil((weaponData as RangedWeaponData).recoil, .2f);
+        return true;
     }
 }

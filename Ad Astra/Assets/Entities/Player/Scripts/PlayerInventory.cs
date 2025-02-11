@@ -17,6 +17,9 @@ public class PlayerInventory : MonoBehaviour
     public Transform weaponHolder;
     public Transform aim;
 
+    public delegate void SwitchDelegate(Weapon weapon);
+    public SwitchDelegate switchWeapon;
+
     private void Awake()
     {
         SpawnWeapon(_currentWeaponIndex);
@@ -28,6 +31,8 @@ public class PlayerInventory : MonoBehaviour
         if (_currentWeaponIndex == i) return;
 
         SpawnWeapon(i);
+        Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
+        switchWeapon?.Invoke(weaponHandler);
     }
     private void SpawnWeapon(int i)
     {

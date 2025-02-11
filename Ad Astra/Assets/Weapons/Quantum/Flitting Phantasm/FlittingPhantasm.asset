@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: FlittingPhantasm
   description: Fast swinging scythe
   damage: 14
-  attackRate: 2
+  attackRate: 3.5
   knockback: 15
   knockbackStrength: 4
   knockbackTime: 0.15

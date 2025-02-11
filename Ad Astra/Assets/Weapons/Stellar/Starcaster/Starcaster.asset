@@ -15,12 +15,12 @@ MonoBehaviour:
   displayName: Starcaster
   description: Fires heavy stars that travel slowly and deal high damage without
     piercing.
-  damage: 51
-  attackRate: 1
+  damage: 44
+  attackRate: 2
   knockback: 2
   knockbackStrength: 2
   knockbackTime: 1
-  isAutoUse: 0
+  isAutoUse: 1
   gunPrefab: {fileID: 1953863327994511009, guid: ca43d58f0ce28b2428ade049ed06aba1, type: 3}
   reactiveType: 2
   rarity: 1

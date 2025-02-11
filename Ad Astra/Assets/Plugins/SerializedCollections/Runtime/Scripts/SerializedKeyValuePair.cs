@@ -8,7 +8,7 @@ namespace AYellowpaper.SerializedCollections
     public struct SerializedKeyValuePair<TKey, TValue>
     {
         public TKey Key;
-        [ColorUsage(true, true)]
+        //[ColorUsage(true, true)]
         public TValue Value;
 
         public SerializedKeyValuePair(TKey key, TValue value)

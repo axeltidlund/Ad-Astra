@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Reaction : MonoBehaviour
 {
-    public virtual void Trigger(Transform position ) { }
+    public virtual void Trigger(Transform position) { }
 }

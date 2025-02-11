@@ -29,7 +29,7 @@ public class Damageable : MonoBehaviour
     {
         float finalDamage = damage * stats.GetGlobalResistance() * stats.GetResistance(System.Enum.GetName(typeof(Global.ReactiveType), element));
         Global.AugmentReactionTarget reaction = stats.ApplyElement(element);
-        finalDamage = GeneralFunctions.instance.ApplyTransformativeReactionMultiplier(finalDamage, reaction);
+        finalDamage = GeneralFunctions.instance.TriggerReaction(finalDamage, reaction, transform);
 
         health = Mathf.Max(0, health - finalDamage);
         Debug.Log(finalDamage);

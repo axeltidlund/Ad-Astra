@@ -12,33 +12,38 @@ public abstract class Weapon : MonoBehaviour
     protected float _timeSinceLastUse => Time.fixedTime - _lastUse;
     protected PlayerAim playerAim;
 
-    private bool _isKeyHeld = false;
+    protected bool _isKeyHeld = false;
 
     public void OnPress() {
         _isKeyHeld = true;
         playerAim = GetComponentInParent<PlayerAim>();
 
-        weaponData.Shake(canUse);
-        weaponData.Sound(canUse, playerAim.aimTransform);
-        DoPress();
+        if (DoPress() == true)
+        {
+            weaponData.Shake(canUse);
+            weaponData.Sound(canUse, playerAim.aimTransform);
+        }
     }
     public void OnRelease() {
         _isKeyHeld = false;
         DoRelease();
     }
 
-    protected virtual void DoPress() { }
+    protected virtual bool DoPress() {
+        return false;
+    }
     protected virtual void DoRelease() { }
-
     public void Update() {
         if (!isEquipped) return;
         canUse = _timeSinceLastUse > (1 / weaponData.attackRate);
 
         if (weaponData.isAutoUse && _isKeyHeld)
         {
-            weaponData.Shake(canUse);
-            weaponData.Sound(canUse, playerAim.aimTransform);
-            DoPress();
+            if (DoPress() == true)
+            {
+                weaponData.Shake(canUse);
+                weaponData.Sound(canUse, playerAim.aimTransform);
+            }
         }
     }
     public virtual void OnEquip() {
