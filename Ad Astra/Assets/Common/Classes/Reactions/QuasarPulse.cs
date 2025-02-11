@@ -10,6 +10,7 @@ public class QuasarPulse : Reaction
     {
         hitboxHandler.Rect(0, transform, 4, 100);
         hitboxHandler.Rect(180, transform, 4, 100);
+        GeneralFunctions.instance.ShakeCamera(1f, 13.33f, 13.33f);
         animator.SetTrigger("play");
     }
 }

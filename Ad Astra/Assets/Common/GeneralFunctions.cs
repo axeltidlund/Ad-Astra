@@ -23,6 +23,8 @@ public class GeneralFunctions : MonoBehaviour
     public SerializedDictionary<Global.ReactiveType, Color> TypeColors;
 
     public float shakeDuration = 0f;
+    private float maxShakeDuration = 1f;
+    private float maxShakeAmp = 1f;
     private void Awake()
     {
         instance = this;
@@ -41,10 +43,13 @@ public class GeneralFunctions : MonoBehaviour
         {
             shakeDuration = 0f;
             noise.m_AmplitudeGain = 0f;
+            maxShakeAmp = 1f;
+            maxShakeDuration = 1f;
         }
         else
         {
             shakeDuration -= Time.deltaTime;
+            noise.m_AmplitudeGain = maxShakeAmp * (Mathf.Pow((shakeDuration / maxShakeDuration), 2));
         }
     }
     public bool PlayerHasAugment(string augmentName)
@@ -84,7 +89,9 @@ public class GeneralFunctions : MonoBehaviour
     public void ShakeCamera(float duration, float amplitude, float frequency)
     {
         if (instance.visualEffectsEnabled == false) { return; }
+        maxShakeDuration = duration;
         shakeDuration = duration;
+        maxShakeAmp = amplitude;
         noise.m_AmplitudeGain = amplitude;
         noise.m_FrequencyGain = frequency;
     }
