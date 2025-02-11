@@ -88,7 +88,10 @@ public class GeneralFunctions : MonoBehaviour
     }
     public void ShakeCamera(float duration, float amplitude, float frequency)
     {
-        if (instance.visualEffectsEnabled == false) { return; }
+        if (instance.visualEffectsEnabled == false) return;
+        if (duration <= shakeDuration) return;
+        if (amplitude <= noise.m_AmplitudeGain) return;
+
         maxShakeDuration = duration;
         shakeDuration = duration;
         maxShakeAmp = amplitude;

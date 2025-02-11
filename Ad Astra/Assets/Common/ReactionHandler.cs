@@ -6,13 +6,13 @@ using UnityEngine;
 public class ReactionHandler : MonoBehaviour
 {
     [SerializedDictionary("Reaction", "Object")]
-    public SerializedDictionary<Global.AugmentReactionTarget, GameObject> Reactions;
+    public SerializedDictionary<Global.AugmentReactionTarget, ReactionData> Reactions;
 
     public void Trigger(Global.AugmentReactionTarget reaction, Transform _transform)
     {
-        if(Reactions.TryGetValue(reaction, out GameObject obj))
+        if(Reactions.TryGetValue(reaction, out ReactionData obj))
         {
-            GameObject go = Instantiate(obj);
+            GameObject go = Instantiate(obj.prefab);
             go.transform.position = _transform.position;
             go.GetComponent<Reaction>().Trigger(_transform);
         }

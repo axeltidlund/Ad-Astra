@@ -27,6 +27,6 @@ public class GameActiveState : State
     }
     public override void Exit()
     {
-
+        
     }
 }

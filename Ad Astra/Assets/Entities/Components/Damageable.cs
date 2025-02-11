@@ -25,11 +25,13 @@ public class Damageable : MonoBehaviour
         health = maxHealth;
     }
 
-    public void Damage(float damage, Global.ReactiveType element, Vector2 _impulse, float _impulseDuration)
+    public void Damage(float damage, Global.ReactiveType element, Vector2 _impulse, float _impulseDuration, bool isReaction = false)
     {
         float finalDamage = damage * stats.GetGlobalResistance() * stats.GetResistance(System.Enum.GetName(typeof(Global.ReactiveType), element));
-        Global.AugmentReactionTarget reaction = stats.ApplyElement(element);
-        finalDamage = GeneralFunctions.instance.TriggerReaction(finalDamage, reaction, transform);
+        if (!isReaction) {
+            Global.AugmentReactionTarget reaction = stats.ApplyElement(element);
+            finalDamage = GeneralFunctions.instance.TriggerReaction(finalDamage, reaction, transform);
+        }
 
         health = Mathf.Max(0, health - finalDamage);
         Debug.Log(finalDamage);
