@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ReactionData", menuName = "ScriptableObjects/ReactionData")]
-public class ReactionData : ScriptableObject
+public class ReactionData : Data
 {
     public string displayName;
     [TextArea(5, 10)]

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ace3bc03d92f14f8943d5bc2a340ab, type: 3}
   m_Name: AP Ammo
   m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 4583b29876c979e4ebf6f482b42a6305, type: 3}
+  icon: {fileID: 21300000, guid: 71a52a4f331e6b041873aef22e5c20c8, type: 3}
   displayName: AP Ammunition
   description: All weapons gain +5 penetration.
   rarity: 2

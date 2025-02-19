@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "CustomAugmentData", menuName = "ScriptableObjects/Augments/CustomAugmentData")]
-public class AugmentData : ScriptableObject
+public class AugmentData : Data
 {
-    public Texture2D icon;
+    public Sprite icon;
     public string displayName;
     [TextArea(5, 10)]
     public string description;

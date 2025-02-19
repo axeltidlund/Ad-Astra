@@ -65,8 +65,12 @@ public class LootHandler : MonoBehaviour
         return selected;
     }
 
-    private void Update()
-    {
-        
+    public Data Roll() {
+        float rand = Random.Range(0f, 1f);
+        if (rand > .2) {
+            return RollAugment();
+        } else {
+            return RollWeapon();
+        }
     }
 }

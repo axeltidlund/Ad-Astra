@@ -5,8 +5,8 @@ using UnityEngine.Events;
 
 public class Level : MonoBehaviour
 {
-    private int _level = 1;
-    private float _xp = 0f;
+    public int _level = 1;
+    public float _xp = 0f;
 
     public UnityEvent<int, int> levelChangedEvent;
     public UnityEvent<float, float> xpChangedEvent;

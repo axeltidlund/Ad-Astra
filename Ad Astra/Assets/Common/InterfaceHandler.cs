@@ -10,6 +10,8 @@ public class InterfaceHandler : MonoBehaviour
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI ammoText;
     public PlayerInventory playerInventory;
+    public GameLoop gameLoop;
+    public GameObject notification;
 
     private Weapon _lastWeaponHandler;
 
@@ -31,6 +33,11 @@ public class InterfaceHandler : MonoBehaviour
         playerInventory.switchWeapon += WeaponChanged;
     }
     void Update() {
+        if (gameLoop.selectionsLeft > 0) {
+            notification.SetActive(true);
+        } else {
+            notification.SetActive(false);
+        }
         xpSlider.value = Mathf.Lerp(xpSlider.value, xpGoal, .25f * Time.deltaTime * 60);
 
         if (_lastWeaponHandler == null) { return; }
