@@ -16,3 +16,4 @@ MonoBehaviour:
   displayName: Rebound Flirt
   description: Every time a bullet bounces, increase speed by 20%.
   rarity: 1
+  stackable: 1

@@ -34,9 +34,10 @@ public abstract class Projectile : MonoBehaviour
         _ricochets = _projectileData.ricochets;
         _penetrations = _projectileData.penetration;
 
-        if (GeneralFunctions.instance.PlayerHasAugment("AP Ammo"))
+        int augmentCount = GeneralFunctions.instance.PlayerAugmentCount("AP Ammo");
+        if (augmentCount > 0)
         {
-            _penetrations += 5;
+            _penetrations += 5 * augmentCount;
         }
 
         float spread = 0;
@@ -98,17 +99,19 @@ public abstract class Projectile : MonoBehaviour
     public virtual void OnWall(RaycastHit2D hitInfo) {
         if (Time.fixedTime - _lastHit < _projectileData.maxAllowedHitFrequency) return;
         _lastHit = Time.fixedTime;
-
-        if (_ricochets > 0 || GeneralFunctions.instance.PlayerHasAugment("Ricochet") ) {
+        
+        if (_ricochets > 0 || GeneralFunctions.instance.PlayerAugmentCount("Ricochet") > 0 ) {
             Vector2 newVelocity = Vector2.Reflect(_rb.velocity, hitInfo.normal);
-            if (GeneralFunctions.instance.PlayerHasAugment("Rebound Flirt"))
+
+            int augmentCount = GeneralFunctions.instance.PlayerAugmentCount("Rebound Flirt");
+            if (augmentCount > 0)
             {
-                newVelocity *= 1.2f;
+                newVelocity *= 1 + (.2f * ((1 - Mathf.Pow(Global.diminishRate, augmentCount))/(1 - Global.diminishRate)));
             }
 
             _rb.velocity = newVelocity;
 
-            if (GeneralFunctions.instance.PlayerHasAugment("Ricochet")) { return; }
+            if (GeneralFunctions.instance.PlayerAugmentCount("Ricochet") > 0 ) { return; }
             _ricochets -= 1;
         } else
         {

@@ -11,19 +11,32 @@ public class GameIntermissionState : State
     public Animator uiAnimator;
     public Transform holder;
     public LootHandler lootHandler;
+
+    Data TryRoll(List<Data> alreadyPicked, int attempts) {
+        if (attempts <= 0) return new Data();
+        Data dataHolder = lootHandler.Roll();
+        if (alreadyPicked.Contains(dataHolder)) return TryRoll(alreadyPicked, attempts - 1);
+        if (dataHolder is AugmentData) {
+            if (!(dataHolder as AugmentData).stackable && GeneralFunctions.instance.PlayerAugmentCount(dataHolder.name) > 0) return TryRoll(alreadyPicked, attempts - 1);
+        }
+        return dataHolder;
+    }
     public override void Enter()
     {
         isComplete = false;
         uiAnimator.SetBool("Selecting", true);
+        List<Data> alreadyPicked = new List<Data>();
 
         foreach (Transform child in holder)
         {
+            child.gameObject.SetActive(transform);
             TextMeshProUGUI name = child.Find("Name").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI type = child.Find("Type").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI desc = child.Find("Description").GetComponent<TextMeshProUGUI>();
             UnityEngine.UI.Image icon = child.Find("Icon").GetComponent<UnityEngine.UI.Image>();
 
-            Data dataHolder = lootHandler.Roll();
+            Data dataHolder = TryRoll(alreadyPicked, 10);
+            alreadyPicked.Add(dataHolder);
             if (dataHolder is WeaponData) {
                 WeaponData weaponData = (WeaponData)dataHolder;
 
@@ -37,6 +50,8 @@ public class GameIntermissionState : State
                 type.text = augmentData.rarity.ToString() + " Augment";
                 icon.sprite = augmentData.icon;
                 desc.text = augmentData.description;
+            } else {
+                child.gameObject.SetActive(false);
             }
         }
     }

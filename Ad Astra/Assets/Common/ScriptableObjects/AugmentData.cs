@@ -11,4 +11,5 @@ public class AugmentData : Data
     public string description;
 
     public Global.Rarities rarity;
+    public bool stackable;
 }

@@ -16,6 +16,7 @@ MonoBehaviour:
   displayName: String Theory
   description: Increases the damage of the Singularity reaction by 20%.
   rarity: 0
+  stackable: 1
   amount: 1.2
   isAdditive: 0
-  targetReaction: 6
+  targetReaction: 4

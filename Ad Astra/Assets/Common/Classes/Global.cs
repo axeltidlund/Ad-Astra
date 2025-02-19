@@ -5,6 +5,7 @@ using UnityEngine;
 
 public static class Global
 {
+    public static float diminishRate = .8f;
     public enum ReactiveType
     {
         None,

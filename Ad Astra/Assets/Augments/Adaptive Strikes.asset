@@ -16,3 +16,4 @@ MonoBehaviour:
   displayName: Adaptive Strikes
   description: Your next attack after switching weapon deals 15% more damage.
   rarity: 1
+  stackable: 1

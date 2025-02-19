@@ -16,6 +16,7 @@ MonoBehaviour:
   displayName: Quick Trigger
   description: Increases weapon usage speed by 15%.
   rarity: 0
+  stackable: 1
   amount: 1.15
   isAdditive: 0
   augmentStat: 2

@@ -52,20 +52,20 @@ public class GeneralFunctions : MonoBehaviour
             noise.m_AmplitudeGain = maxShakeAmp * (Mathf.Pow((shakeDuration / maxShakeDuration), 2));
         }
     }
-    public bool PlayerHasAugment(string augmentName)
+    public int PlayerAugmentCount(string augmentName)
     {
-        bool hasAugment = false;
+        int augmentCount = 0;
 
-        if (player.GetComponent<PlayerInventory>().augmentations.Count == 0) return false;
+        if (player.GetComponent<PlayerInventory>().augmentations.Count == 0) return 0;
         foreach (AugmentData augment in player.GetComponent<PlayerInventory>().augmentations)
         {
             if (augment.name.Equals(augmentName))
             {
-                hasAugment = true;
+                augmentCount++;
             }
         }
 
-        return hasAugment;
+        return augmentCount;
     }
 
     public void SpawnDamageIndicator(Vector2 position, float damage, float duration)

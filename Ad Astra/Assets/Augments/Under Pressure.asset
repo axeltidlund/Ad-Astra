@@ -14,9 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 71a52a4f331e6b041873aef22e5c20c8, type: 3}
   displayName: Under Pressure
-  description: 'If you have zero remaining bullets when you reload, reload 25% faster.
-
-
-    "Insanity
-    laughs under pressure we''re breaking"'
+  description: If you have zero remaining bullets when you reload, reload 25% faster.
   rarity: 0
+  stackable: 0

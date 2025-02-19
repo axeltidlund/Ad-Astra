@@ -33,9 +33,19 @@ public class Damageable : MonoBehaviour
             finalDamage = GeneralFunctions.instance.TriggerReaction(finalDamage, reaction, transform);
         }
 
+        if (GeneralFunctions.instance.PlayerAugmentCount("Bet") > 0) {
+            finalDamage *= Random.Range(0f, 2f);
+        }
+        if (GeneralFunctions.instance.PlayerAugmentCount("Gamble") > 0) {
+            float rand = Random.Range(0f, 1f);
+            if (rand >= .5) {
+                finalDamage *= 2f;
+            } else if (rand <= .3) {
+                finalDamage *= 0f;
+            }
+        }
         health = Mathf.Max(0, health - finalDamage);
-        Debug.Log(finalDamage);
-        GeneralFunctions.instance.SpawnDamageIndicator(transform.position, finalDamage, finalDamage == damage ? .5f : 1f);
+        GeneralFunctions.instance.SpawnDamageIndicator(transform.position, Mathf.Round(finalDamage * 10) / 10, finalDamage == damage ? .5f : 1f);
         onDamage.Invoke(health);
 
         if (_impulse == Vector2.zero || _impulseDuration <= 0) { return; }
