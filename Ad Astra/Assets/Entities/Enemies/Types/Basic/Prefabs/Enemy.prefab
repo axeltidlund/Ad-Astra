@@ -126,7 +126,7 @@ MonoBehaviour:
   - {x: -0.31182417, y: -0.009655893, z: 0}
   m_ShapePathHash: -1602084066
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1358
+  m_InstanceId: 45626
   m_LocalBounds:
     m_Center: {x: -0.030802697, y: 0.31611675, z: 0}
     m_Extent: {x: 0.41589814, y: 0.33141875, z: 0}
@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 6221205640971817260}
   - component: {fileID: 7566070583208126401}
   - component: {fileID: 8838574901145275535}
+  - component: {fileID: 5927843314007818295}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -430,6 +431,19 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &5927843314007818295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500341071641414854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe9877d10dfe0f44aa4d942c8b4da65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  step: 45
 --- !u!1 &2564966297010169969
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +657,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canSeePlayer: 0
   nextWaypointDistance: 3
+  hitboxHandler: {fileID: 5927843314007818295}
+  enemyData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
 --- !u!58 &6414925196752340103
 CircleCollider2D:
   m_ObjectHideFlags: 0

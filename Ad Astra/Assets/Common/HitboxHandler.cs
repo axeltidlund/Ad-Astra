@@ -8,9 +8,9 @@ using UnityEngine;
 public class HitboxHandler : MonoBehaviour
 {
     public int step = 2;
-    public List<RaycastHit2D> Angular(int angle, Transform origin, float radius)
+    public List<RaycastHit2D> Angular(int angle, Transform origin, float radius, bool isEnemy = false)
     {
-        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
+        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies") | LayerMask.GetMask("Player");
 
         List<RaycastHit2D> hits = new List<RaycastHit2D>();
         HashSet<GameObject> uniqueObjects = new HashSet<GameObject>();
@@ -25,9 +25,11 @@ public class HitboxHandler : MonoBehaviour
 
             foreach (RaycastHit2D hit in angleHits)
             {
-                if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
-                    hit.collider.CompareTag("Enemy") && hit.rigidbody != null)
+                if ((!isEnemy && (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
+                    hit.collider.CompareTag("Enemy") && hit.rigidbody != null)) || (isEnemy && (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Player") &&
+                    hit.collider.CompareTag("Player") && hit.rigidbody != null)))
                 {
+                    Debug.Log(hit);
                     if (uniqueObjects.Add(hit.rigidbody.gameObject))
                     {
                         hits.Add(hit);
@@ -39,9 +41,9 @@ public class HitboxHandler : MonoBehaviour
         return hits;
     }
 
-    public List<RaycastHit2D> Rect(int angle, Transform origin, float radius, float length)
+    public List<RaycastHit2D> Rect(int angle, Transform origin, float radius, float length, bool isEnemy = false)
     {
-        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
+        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies") | LayerMask.GetMask("Player");
         List<RaycastHit2D> hits = new List<RaycastHit2D>();
         HashSet<GameObject> uniqueObjects = new HashSet<GameObject>();
 
@@ -51,8 +53,9 @@ public class HitboxHandler : MonoBehaviour
 
         foreach (RaycastHit2D hit in angleHits)
         {
-            if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
-                hit.collider.CompareTag("Enemy") && hit.rigidbody != null)
+            if ((!isEnemy && (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
+                   hit.collider.CompareTag("Enemy") && hit.rigidbody != null)) || (isEnemy && (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Player") &&
+                   hit.collider.CompareTag("Player") && hit.rigidbody != null)))
             {
                 if (uniqueObjects.Add(hit.rigidbody.gameObject))
                 {

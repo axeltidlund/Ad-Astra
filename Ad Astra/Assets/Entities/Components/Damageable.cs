@@ -25,23 +25,76 @@ public class Damageable : MonoBehaviour
         health = maxHealth;
     }
 
-    public void Damage(float damage, Global.ReactiveType element, Vector2 _impulse, float _impulseDuration, bool isReaction = false)
+    public void Damage(float damage, Global.ReactiveType element, Vector2 _impulse, float _impulseDuration, Global.AugmentReactionTarget oldReaction = Global.AugmentReactionTarget.None)
     {
+        bool isPlayer = gameObject.name != "Player";
+        Global.AugmentReactionTarget reaction = Global.AugmentReactionTarget.None;
+
         float finalDamage = damage * stats.GetGlobalResistance() * stats.GetResistance(System.Enum.GetName(typeof(Global.ReactiveType), element));
-        if (!isReaction) {
-            Global.AugmentReactionTarget reaction = stats.ApplyElement(element);
+        if (oldReaction == Global.AugmentReactionTarget.None) {
+            reaction = stats.ApplyElement(element);
             finalDamage = GeneralFunctions.instance.TriggerReaction(finalDamage, reaction, transform);
         }
 
-        if (GeneralFunctions.instance.PlayerAugmentCount("Bet") > 0) {
-            finalDamage *= Random.Range(0f, 2f);
-        }
-        if (GeneralFunctions.instance.PlayerAugmentCount("Gamble") > 0) {
-            float rand = Random.Range(0f, 1f);
-            if (rand >= .5) {
-                finalDamage *= 2f;
-            } else if (rand <= .3) {
-                finalDamage *= 0f;
+        if (isPlayer)
+        {
+            if (GeneralFunctions.instance.PlayerAugmentCount("Bet") > 0)
+            {
+                finalDamage *= Random.Range(0f, 2f);
+            }
+            if (GeneralFunctions.instance.PlayerAugmentCount("Gamble") > 0)
+            {
+                float rand = Random.Range(0f, 1f);
+                if (rand >= .5)
+                {
+                    finalDamage *= 2f;
+                }
+                else if (rand <= .3)
+                {
+                    finalDamage *= 0f;
+                }
+            }
+
+            List<StatAugmentData> multiplicatives = new List<StatAugmentData>();
+            List<StatAugmentData> additives = new List<StatAugmentData>();
+
+            foreach (AugmentData augment in GeneralFunctions.instance.GetAugmentDatas())
+            {
+                if (augment is ReactionAugmentData)
+                {
+                    ReactionAugmentData data = augment as ReactionAugmentData;
+                    if (oldReaction == Global.AugmentReactionTarget.None) continue;
+                    if (data.targetReaction != oldReaction) continue;
+                    if (data.isAdditive)
+                    {
+                        additives.Add(data);
+                    } else
+                    {
+                        multiplicatives.Add(data);
+                    }
+
+                } else if (augment is PlayerAugmentData)
+                {
+                    PlayerAugmentData data = augment as PlayerAugmentData;
+                    if (data.augmentStat != Global.AugmentStat.DMG) continue;
+                    if (data.isAdditive)
+                    {
+                        additives.Add(data);
+                    }
+                    else
+                    {
+                        multiplicatives.Add(data);
+                    }
+                }
+            }
+
+            foreach(StatAugmentData multiplicativeAugment in multiplicatives)
+            {
+                finalDamage = multiplicativeAugment.Apply(finalDamage);
+            }
+            foreach (StatAugmentData additiveAugment in additives)
+            {
+                finalDamage = additiveAugment.Apply(finalDamage);
             }
         }
         health = Mathf.Max(0, health - finalDamage);

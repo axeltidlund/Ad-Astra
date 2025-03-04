@@ -16,8 +16,8 @@ public class Singularity : Reaction
         foreach (var enemy in hits)
         {
             Damageable damageable = enemy.collider.gameObject.GetComponent<Damageable>();
-            if (damageable == null) return;
-            damageable.Damage(reactionData.damage, reactionData.reactiveType, Vector2.zero, 0f, true);
+            if (damageable == null) continue;
+            damageable.Damage(reactionData.damage, reactionData.reactiveType, Vector2.zero, 0f, Global.AugmentReactionTarget.Singularity);
         }
     }
 }

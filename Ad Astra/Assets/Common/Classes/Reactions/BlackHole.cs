@@ -26,8 +26,8 @@ public class BlackHole : Reaction
         {
             Damageable damageable = enemy.collider.gameObject.GetComponent<Damageable>();
             Vector2 vec = (enemy.rigidbody.transform.position - transform.position).normalized;
-            if (damageable == null) return;
-            damageable.Damage(reactionData.damage, reactionData.reactiveType, -vec * 2f, .25f, true);
+            if (damageable == null) continue;
+            damageable.Damage(reactionData.damage, reactionData.reactiveType, -vec * 2f, .25f, Global.AugmentReactionTarget.BlackHole);
         }
 
         if (hitCount >= (3 / hitRate)) {

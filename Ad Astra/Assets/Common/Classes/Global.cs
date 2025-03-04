@@ -118,4 +118,9 @@ public static class Global
         }
         return reactionPaths[aura][trigger];
     }
+
+    public static bool IsAugmentForCorrectStat(AugmentStat playerStat, AugmentStat augmentStat)
+    {
+        return playerStat == augmentStat;
+    }
 }

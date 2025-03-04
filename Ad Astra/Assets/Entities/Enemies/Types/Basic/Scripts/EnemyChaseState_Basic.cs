@@ -15,6 +15,10 @@ public class EnemyChaseState_Basic : State
 
     Seeker seeker;
     EnemyAim aim;
+    public HitboxHandler hitboxHandler;
+    public EnemyData enemyData;
+
+    float attackTimer = 0f;
 
     EnemyStateMachine input_enemy;
     Vector2 direction;
@@ -51,8 +55,26 @@ public class EnemyChaseState_Basic : State
         direction = ((Vector2)path.vectorPath[currentWaypoint] - (Vector2)transform.position).normalized;
 
         float distance = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
+        float playerDistance = Vector2.Distance(transform.position, input_enemy.player.transform.position);
         if (distance < nextWaypointDistance) {
             currentWaypoint++;
+        }
+        if (attackTimer > 0)
+        {
+            attackTimer -= Time.deltaTime;
+        }
+        else
+        {
+            if (playerDistance >= nextWaypointDistance) return;
+
+            List<RaycastHit2D> hits = hitboxHandler.Angular(360, transform, .8f, true);
+            foreach (RaycastHit2D hit in hits)
+            {
+                Damageable damageable = hit.collider.gameObject.GetComponent<Damageable>();
+                if (damageable == null) continue;
+                damageable.Damage(enemyData.attack, Global.ReactiveType.None, Vector2.zero, 0f);
+                attackTimer = 1f;
+            }
         }
     }
     public override void FixedDo()

@@ -68,6 +68,10 @@ public class GeneralFunctions : MonoBehaviour
         return augmentCount;
     }
 
+    public List<AugmentData> GetAugmentDatas()
+    {
+        return player.GetComponent<PlayerInventory>().augmentations;
+    }
     public void SpawnDamageIndicator(Vector2 position, float damage, float duration)
     {
         if (instance.visualEffectsEnabled == false) { return; }
