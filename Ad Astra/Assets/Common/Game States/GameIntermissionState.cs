@@ -11,6 +11,11 @@ public class GameIntermissionState : State
     public Animator uiAnimator;
     public Transform holder;
     public LootHandler lootHandler;
+    public PlayerInventory inventory;
+
+    public DataHolder button1;
+    public DataHolder button2;
+    public DataHolder button3;
 
     Data TryRoll(List<Data> alreadyPicked, int attempts) {
         if (attempts <= 0) return new Data();
@@ -29,7 +34,7 @@ public class GameIntermissionState : State
 
         foreach (Transform child in holder)
         {
-            child.gameObject.SetActive(transform);
+            child.gameObject.SetActive(true);
             TextMeshProUGUI name = child.Find("Name").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI type = child.Find("Type").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI desc = child.Find("Description").GetComponent<TextMeshProUGUI>();
@@ -53,6 +58,10 @@ public class GameIntermissionState : State
             } else {
                 child.gameObject.SetActive(false);
             }
+            if (dataHolder)
+            {
+                child.GetComponent<DataHolder>().data = dataHolder;
+            }
         }
     }
     public override void Do()
@@ -64,10 +73,34 @@ public class GameIntermissionState : State
         uiAnimator.SetBool("Selecting", false);
     }
 
-    public void Click() {
+    public void Click1() {
         if (isComplete) return;
         isComplete = true;
 
-        // Give 
+        // Give
+        if (!button1.data) return;
+        Give(button1.data);
+    }
+    public void Click2()
+    {
+        if (isComplete) return;
+        isComplete = true;
+
+        // Give
+        if (!button2.data) return;
+        Give(button2.data);
+    }
+    public void Click3()
+    {
+        if (isComplete) return;
+        isComplete = true;
+
+        // Give
+        if (!button3.data) return;
+        Give(button3.data);
+    }
+    public void Give(Data data)
+    {
+        inventory.Give(data);
     }
 }

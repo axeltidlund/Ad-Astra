@@ -23,7 +23,7 @@ public class EnemyStateMachine : StateMachine
         player = FindAnyObjectByType<PlayerStateMachine>().gameObject;
 
         Damageable damageable = GetComponent<Damageable>();
-        damageable.Setup(enemyData.maxHealth);
+        damageable.Setup(enemyData.maxHealth / GeneralFunctions.instance.globalDifficulty);
     }
     void SelectState()
     {

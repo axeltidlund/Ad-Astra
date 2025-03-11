@@ -8,14 +8,27 @@ public class GameActiveState : State
     public GameObject enemyPrefab; // this needs to be changed
     private float spawnTimer = 0f;
     public float maxSpawnTime = 2f;
+
+    float currentTime = 0f;
+
+    float c = .025f;
+    float d = 18.2f;
+    public float currentDifficultyMultiplier;
+    int lastLevel = 1;
+    private void Awake()
+    {
+        currentDifficultyMultiplier = 1.5f;
+    }
     public override void Enter()
     {
         Debug.Log("Game Loop is now Active.");
+        UpdateLevel(lastLevel, 0);
     }
     public override void Do()
     {
+        currentTime += Time.deltaTime;
         spawnTimer += Time.deltaTime;
-        if (spawnTimer >= maxSpawnTime) {
+        if (spawnTimer >= maxSpawnTime * currentDifficultyMultiplier) {
             spawnTimer = 0f;
             // Spawn
 
@@ -27,6 +40,13 @@ public class GameActiveState : State
     }
     public override void Exit()
     {
-        
+            
+    }
+
+    public void UpdateLevel(int newLevel, int _)
+    {
+        lastLevel = newLevel;
+        currentDifficultyMultiplier = (1f / (1f + Mathf.Exp(c * (newLevel - d))) + 0.2f) / 0.8f;
+        GeneralFunctions.instance.globalDifficulty = currentDifficultyMultiplier;
     }
 }

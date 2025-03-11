@@ -34,6 +34,36 @@ public class PlayerInventory : MonoBehaviour
         Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
         switchWeapon?.Invoke(weaponHandler);
     }
+
+    public void Give(Data data)
+    {
+        if (data is WeaponData)
+        {
+            int i = 0;
+            bool exists = false;
+
+            foreach (WeaponData weapon in weapons)
+            {
+                if (weapon == data)
+                {
+                    exists = true;
+                    break;
+                }
+                i++;
+            }
+            if (exists)
+            {
+                weapons[i] = weapons[_currentWeaponIndex];
+            }
+            weapons[_currentWeaponIndex] = (WeaponData)data;
+            SpawnWeapon(_currentWeaponIndex);
+            Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
+            switchWeapon?.Invoke(weaponHandler);
+        } else if (data is AugmentData)
+        {
+            augmentations.Add(data as AugmentData);
+        }
+    }
     private void SpawnWeapon(int i)
     {
         if (_currentWeaponPrefab != null)

@@ -1,0 +1,64 @@
+Folder PATH listing for volume Windows
+Volume serial number is 5ECB-F3A9
+C:.
+Assets
+-   Audio
+-   Fonts
+-   Icon
+-   Palettes
+-   UI
+-       Animation
+Augments
+Common
+-   Classes
+-   -   Reactions
+-   Game States
+-   Interfaces
+-   Prefabs
+-   ScriptableObjects
+-   Shaders
+Entities
+-   Components
+-   Enemies
+-   -   Scripts
+-   -   Types
+-   -       Basic
+-   -           Prefabs
+-   -           Scripts
+-   Player
+-       Audio
+-       Prefabs
+-       Scripts
+-       -   States
+-       Sprites
+Reactions
+Tilesets
+-   GameTileset
+-   Space Station
+Weapons
+    Gravity
+    -   Tetherstorm
+    -       Audio
+    -       Effects
+    -       Prefabs
+    -       Sprites
+    Quantum
+    -   Flitting Phantasm
+    -       Animations
+    -       Audio
+    -       Effects
+    -       Prefabs
+    -       Sprites
+    Stellar
+    -   Starcaster
+    -       Audio
+    -       Effects
+    -       Prefabs
+    -       Sprites
+    -           Materials
+    Void
+        Voidstick
+            Audio
+            Effects
+            Prefabs
+            Sprites

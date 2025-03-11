@@ -25,6 +25,8 @@ public class GeneralFunctions : MonoBehaviour
     public float shakeDuration = 0f;
     private float maxShakeDuration = 1f;
     private float maxShakeAmp = 1f;
+
+    public float globalDifficulty = 1f;
     private void Awake()
     {
         instance = this;

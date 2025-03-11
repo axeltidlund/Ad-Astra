@@ -29,7 +29,6 @@ public class HitboxHandler : MonoBehaviour
                     hit.collider.CompareTag("Enemy") && hit.rigidbody != null)) || (isEnemy && (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Player") &&
                     hit.collider.CompareTag("Player") && hit.rigidbody != null)))
                 {
-                    Debug.Log(hit);
                     if (uniqueObjects.Add(hit.rigidbody.gameObject))
                     {
                         hits.Add(hit);
