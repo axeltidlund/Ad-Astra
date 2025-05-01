@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f1b51e181224453390d910271355928, type: 3}
+  m_Name: CosmicStorm
+  m_EditorClassIdentifier: 
+  displayName: Cosmic Storm
+  description: Storms cosmically
+  damage: 1
+  reactiveType: 2
+  prefab: {fileID: 3796273416504949623, guid: c31c78eab8d4647b599dbfe636bc0623, type: 3}
+  shakeDuration: 0.25
+  shakeSpeed: 40
+  shakeAmp: 2
+  sound: {fileID: 8300000, guid: 2900a8b7ef2f34eb7b552a264a84f091, type: 3}
