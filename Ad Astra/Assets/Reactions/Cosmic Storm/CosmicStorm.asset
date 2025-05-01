@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Cosmic Storm
   description: Storms cosmically
-  damage: 1
+  damage: 2
   reactiveType: 2
-  prefab: {fileID: 3796273416504949623, guid: c31c78eab8d4647b599dbfe636bc0623, type: 3}
+  prefab: {fileID: 908721155570596796, guid: ad6ea77b7dc978541b65732f49577c8a, type: 3}
   shakeDuration: 0.25
   shakeSpeed: 40
   shakeAmp: 2
-  sound: {fileID: 8300000, guid: 2900a8b7ef2f34eb7b552a264a84f091, type: 3}
+  sound: {fileID: 8300000, guid: 422ccabab74ca9b4599b7706e3be00c4, type: 3}

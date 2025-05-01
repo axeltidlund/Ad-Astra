@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a8c8957347bf642ad370fefe8cdd08, type: 3}
+  m_Name: Nebulight
+  m_EditorClassIdentifier: 
+  displayName: Nebulight
+  description: Curving shots
+  damage: 3
+  attackRate: 20
+  knockback: 2
+  knockbackStrength: 2
+  knockbackTime: 0.2
+  isAutoUse: 1
+  gunPrefab: {fileID: 2472387515838586888, guid: 54d2ddf0c77494c40a3314222bb116fe, type: 3}
+  reactiveType: 5
+  rarity: 0
+  shakeDuration: 0.08
+  shakeSpeed: 5
+  shakeAmp: 6
+  shootSound: {fileID: 8300000, guid: 5e8fc58eb5e5e744dbd81a3b99cc0c8f, type: 3}
+  magazineAmount: 20
+  reloadTime: 2
+  recoil: 2
+  shotRange: 80
+  spread: 3

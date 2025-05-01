@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public abstract class Projectile : MonoBehaviour
 {
-    protected WeaponData _weaponData;
+    protected Data _weaponData;
     protected ProjectileData _projectileData;
     protected PlayerInventory _playerInventory;
 
@@ -25,7 +25,7 @@ public abstract class Projectile : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
     }
-    public virtual void Spawn(WeaponData weaponData, ProjectileData projectileData, Transform origin)
+    public virtual void Spawn(Data weaponData, ProjectileData projectileData, Transform origin)
     {
         _weaponData = weaponData;
         _origin = origin;
@@ -81,7 +81,15 @@ public abstract class Projectile : MonoBehaviour
         Damageable damageable = hit.rigidbody.gameObject.GetComponent<Damageable>();
         if (damageable != null )
         {
-            damageable.Damage(_weaponData.damage, _weaponData.reactiveType, gameObject.GetComponent<Rigidbody2D>().velocity.normalized * _weaponData.knockbackStrength, _weaponData.knockbackTime);
+            if (_weaponData is WeaponData)
+            {
+                WeaponData weaponData = (WeaponData)_weaponData;
+                damageable.Damage(weaponData.damage, weaponData.reactiveType, gameObject.GetComponent<Rigidbody2D>().velocity.normalized * weaponData.knockbackStrength, weaponData.knockbackTime);
+            } else if (_weaponData is ReactionData)
+            {
+                ReactionData weaponData = (ReactionData)_weaponData;
+                damageable.Damage(weaponData.damage, weaponData.reactiveType, gameObject.GetComponent<Rigidbody2D>().velocity.normalized * 2f, 1f);
+            }
         }
 
         _penetrations -= 1;
