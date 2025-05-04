@@ -3,6 +3,7 @@ using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GeneralFunctions : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GeneralFunctions : MonoBehaviour
     public GameObject indicator;
     public GameObject textIndicator;
     public ReactionHandler reactionHandler;
+    public AugmentManager augmentManager;
 
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
@@ -21,6 +23,9 @@ public class GeneralFunctions : MonoBehaviour
 
     [SerializedDictionary("Reactive Type", "Color")]
     public SerializedDictionary<Global.ReactiveType, Color> TypeColors;
+
+    [SerializedDictionary("Rarity", "Color")]
+    public SerializedDictionary<Global.Rarities, Color> RarityColors;
 
     public float shakeDuration = 0f;
     private float maxShakeDuration = 1f;
@@ -122,7 +127,7 @@ public class GeneralFunctions : MonoBehaviour
         switch (reaction)
         {
             case Global.AugmentReactionTarget.Fusion:
-                return damage * 2;
+                return damage * (2 * Mathf.Pow(1.3f, GeneralFunctions.instance.PlayerAugmentCount("Hearts Entwined")));
             default:
                 reactionHandler.Trigger(reaction, transform);
                 return damage;
@@ -149,5 +154,50 @@ public class GeneralFunctions : MonoBehaviour
 
         totalForce = totalForce.normalized * forceMultiplier;
         bullet.velocity += totalForce * Time.deltaTime;
+    }
+    public float StackValue(int amount)
+    {
+        return Mathf.Sqrt(amount);
+    }
+    public float ApplyAugmentDamageModifications(float damage)
+    {
+        return augmentManager.ApplyAugments(damage);
+    }
+    public float GetUseSpeed()
+    {
+        return augmentManager.useSpeed;
+    }
+
+    public UnityEvent onEnemyHit;
+    public void EnemyHit()
+    {
+        onEnemyHit.Invoke();
+    }
+
+    float bonusAtZero = 2f;
+    float exponent = 3f;
+    public float PlayerHealthBuff()
+    {
+        Stats stats = player.GetComponent<Stats>();
+        Damageable damageable = player.GetComponent<Damageable>();
+        if (stats == null || damageable == null) { return 1f; }
+
+        float maxHealth = stats.entityData.maxHealth;
+        float health = damageable.health;
+        float ratio = health / maxHealth;
+
+        return 1f + Mathf.Pow(1f - ratio, exponent) * bonusAtZero;
+    }
+
+    public Global.ReactiveType GetWeaponReactiveType()
+    {
+        PlayerInventory playerInventory = player.GetComponent<PlayerInventory>();
+        WeaponData data = playerInventory.weapons[playerInventory._currentWeaponIndex];
+        if (data == null)
+        {
+            return Global.ReactiveType.None;
+        }
+
+        return data.reactiveType;
     }
 }

@@ -14,6 +14,9 @@ public abstract class Weapon : MonoBehaviour
 
     protected bool _isKeyHeld = false;
 
+    public delegate void FireWeapon(bool canUse);
+    public FireWeapon fireWeapon;
+
     public void OnPress() {
         _isKeyHeld = true;
         playerAim = GetComponentInParent<PlayerAim>();
@@ -22,6 +25,7 @@ public abstract class Weapon : MonoBehaviour
         {
             weaponData.Shake(canUse);
             weaponData.Sound(canUse, playerAim.aimTransform);
+            fireWeapon?.Invoke(canUse);
         }
     }
     public void OnRelease() {
@@ -35,7 +39,7 @@ public abstract class Weapon : MonoBehaviour
     protected virtual void DoRelease() { }
     public void Update() {
         if (!isEquipped) return;
-        canUse = _timeSinceLastUse > (1 / weaponData.attackRate);
+        canUse = _timeSinceLastUse > (1 / (weaponData.attackRate * GeneralFunctions.instance.GetUseSpeed()));
 
         if (weaponData.isAutoUse && _isKeyHeld)
         {
@@ -43,6 +47,7 @@ public abstract class Weapon : MonoBehaviour
             {
                 weaponData.Shake(canUse);
                 weaponData.Sound(canUse, playerAim.aimTransform);
+                fireWeapon?.Invoke(canUse);
             }
         }
     }

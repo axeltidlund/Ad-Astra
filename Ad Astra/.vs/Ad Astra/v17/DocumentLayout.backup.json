@@ -3,55 +3,147 @@
   "WorkspaceRootPath": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\weapons\\nebula\\nebulight\\nebulightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\nebula\\nebulight\\nebulightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\hitboxhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\hitboxhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\weapons\\stellar\\starcaster\\starcasterprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\stellar\\starcaster\\starcasterprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\generalfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\generalfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\weapons\\void\\voidstick\\voidstickprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\menuhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\menuhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\classes\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\components\\damageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\components\\damageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\void\\voidstick\\voidstickprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\void\\voidstick\\voidstickprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\weapons\\gravity\\tetherstorm\\tetherstormprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\gravity\\tetherstorm\\tetherstormprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\loothandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\loothandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\reactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\reactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\scriptableobjects\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\scriptableobjects\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\entities\\components\\projectileshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\components\\projectileshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\classes\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\classes\\reactions\\blackhole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\reactions\\blackhole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\entities\\enemies\\scripts\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\enemies\\scripts\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\classes\\reactions\\fission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\reactions\\fission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\reactions\\fission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\common\\classes\\reactions\\cosmicstorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\reactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\reactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\augmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\augmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\game states\\gameintermissionstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\game states\\gameintermissionstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\stellar\\starcaster\\starcasterprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\stellar\\starcaster\\starcasterprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\special\\handgun\\handgunprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\special\\handgun\\handgunprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\gravity\\tetherstorm\\tetherstormprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\gravity\\tetherstorm\\tetherstormprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\nebula\\nebulight\\nebulightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\nebula\\nebulight\\nebulightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\interfacehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\interfacehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\player\\scripts\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\player\\scripts\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\gameendedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\gameendedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\gameloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\gameloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\components\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\components\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\enemies\\types\\basic\\scripts\\enemychasestate_basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\enemies\\types\\basic\\scripts\\enemychasestate_basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\scriptableobjects\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\scriptableobjects\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\player\\scripts\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\player\\scripts\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\damagevfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\damagevfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\enemies\\scripts\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\enemies\\scripts\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\special\\handgun\\handgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\special\\handgun\\handgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\reactions\\supernova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\reactions\\supernova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\void\\voidstick\\voidstick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\void\\voidstick\\voidstick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\reactions\\singularity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\reactions\\singularity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\entities\\components\\projectileshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\entities\\components\\projectileshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\scriptableobjects\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\scriptableobjects\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\reactions\\blackhole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\reactions\\blackhole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\common\\classes\\reactions\\cosmicstorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\common\\classes\\reactions\\cosmicstorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|d:\\projects\\unity\\ad-astra\\ad astra\\assets\\weapons\\nebula\\nebulight\\nebulight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\assets\\weapons\\nebula\\nebulight\\nebulight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD12301-47E2-BDAB-68FE-C97CBD8E5D96}|Assembly-CSharp.csproj|solutionrelative:assets\\weapons\\nebula\\nebulight\\nebulight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -62,102 +154,207 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StarcasterProjectile.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
-              "RelativeToolTip": "Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:42:06.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VoidstickProjectile.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
-              "RelativeToolTip": "Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Title": "MenuHandler.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\MenuHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\MenuHandler.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\MenuHandler.cs",
+              "RelativeToolTip": "Assets\\MenuHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:42:03.643Z",
+              "WhenOpened": "2025-05-04T20:16:37.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TetherstormProjectile.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
-              "RelativeToolTip": "Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Global.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Global.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Global.cs",
+              "RelativeToolTip": "Assets\\Common\\Classes\\Global.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:41:48.551Z",
+              "WhenOpened": "2025-05-04T17:58:56.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Data.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ScriptableObjects\\Data.cs",
-              "RelativeDocumentMoniker": "Assets\\Common\\ScriptableObjects\\Data.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ScriptableObjects\\Data.cs",
-              "RelativeToolTip": "Assets\\Common\\ScriptableObjects\\Data.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GeneralFunctions.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\GeneralFunctions.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\GeneralFunctions.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\GeneralFunctions.cs",
+              "RelativeToolTip": "Assets\\Common\\GeneralFunctions.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwv5wAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:39:29.211Z",
+              "WhenOpened": "2025-05-04T15:32:51.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "AugmentManager.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\AugmentManager.cs",
+              "RelativeDocumentMoniker": "Assets\\AugmentManager.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\AugmentManager.cs",
+              "RelativeToolTip": "Assets\\AugmentManager.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:27:33.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Damageable.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\Damageable.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Components\\Damageable.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\Damageable.cs",
+              "RelativeToolTip": "Assets\\Entities\\Components\\Damageable.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAIwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:38:07.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Projectile.cs",
               "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Projectile.cs",
               "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Projectile.cs",
               "RelativeToolTip": "Assets\\Common\\Classes\\Projectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:39:03.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:39:03.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NebulightProjectile.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:46:08.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TetherstormProjectile.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Gravity\\Tetherstorm\\TetherstormProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:41:48.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HandgunProjectile.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Special\\Handgun\\HandgunProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Special\\Handgun\\HandgunProjectile.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Special\\Handgun\\HandgunProjectile.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Special\\Handgun\\HandgunProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:56:05.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StarcasterProjectile.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Stellar\\Starcaster\\StarcasterProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:42:06.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VoidstickProjectile.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Void\\Voidstick\\VoidstickProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:42:03.643Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ProjectileShooter.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\ProjectileShooter.cs",
-              "RelativeDocumentMoniker": "Assets\\Entities\\Components\\ProjectileShooter.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\ProjectileShooter.cs",
-              "RelativeToolTip": "Assets\\Entities\\Components\\ProjectileShooter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABCAAAAAAAAAA==",
+              "Title": "LootHandler.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\LootHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\LootHandler.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\LootHandler.cs",
+              "RelativeToolTip": "Assets\\Common\\LootHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:38:19.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:53:29.807Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "GameIntermissionState.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Game States\\GameIntermissionState.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\Game States\\GameIntermissionState.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Game States\\GameIntermissionState.cs",
+              "RelativeToolTip": "Assets\\Common\\Game States\\GameIntermissionState.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwDsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:45:18.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Fission.cs",
               "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\Fission.cs",
               "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Reactions\\Fission.cs",
               "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\Fission.cs",
               "RelativeToolTip": "Assets\\Common\\Classes\\Reactions\\Fission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:33:17.137Z",
+              "WhenOpened": "2025-05-01T20:33:17.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HitboxHandler.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\HitboxHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\HitboxHandler.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\HitboxHandler.cs",
+              "RelativeToolTip": "Assets\\Common\\HitboxHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:01:53.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Weapon.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Common\\Classes\\Weapon.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwDEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:49:22.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ReactionHandler.cs",
               "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ReactionHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Common\\ReactionHandler.cs",
@@ -165,12 +362,203 @@
               "RelativeToolTip": "Assets\\Common\\ReactionHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:23:33.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:23:33.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
+              "Title": "InterfaceHandler.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\InterfaceHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\InterfaceHandler.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\InterfaceHandler.cs",
+              "RelativeToolTip": "Assets\\Common\\InterfaceHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIA1wCIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:37:32.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PlayerInventory.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Player\\Scripts\\PlayerInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Player\\Scripts\\PlayerInventory.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Player\\Scripts\\PlayerInventory.cs",
+              "RelativeToolTip": "Assets\\Entities\\Player\\Scripts\\PlayerInventory.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:05:13.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GameEndedState.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\GameEndedState.cs",
+              "RelativeDocumentMoniker": "Assets\\GameEndedState.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\GameEndedState.cs",
+              "RelativeToolTip": "Assets\\GameEndedState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:45:14.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GameLoop.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\GameLoop.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\GameLoop.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\GameLoop.cs",
+              "RelativeToolTip": "Assets\\Common\\GameLoop.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:39:14.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Stats.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\Stats.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Components\\Stats.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\Stats.cs",
+              "RelativeToolTip": "Assets\\Entities\\Components\\Stats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:38:00.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EnemyChaseState_Basic.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Enemies\\Types\\Basic\\Scripts\\EnemyChaseState_Basic.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Enemies\\Types\\Basic\\Scripts\\EnemyChaseState_Basic.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Enemies\\Types\\Basic\\Scripts\\EnemyChaseState_Basic.cs",
+              "RelativeToolTip": "Assets\\Entities\\Enemies\\Types\\Basic\\Scripts\\EnemyChaseState_Basic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:02:03.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ScriptableObjects\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\ScriptableObjects\\PlayerData.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ScriptableObjects\\PlayerData.cs",
+              "RelativeToolTip": "Assets\\Common\\ScriptableObjects\\PlayerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:44:34.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Handgun.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Special\\Handgun\\Handgun.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Special\\Handgun\\Handgun.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Special\\Handgun\\Handgun.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Special\\Handgun\\Handgun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:55:50.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DamageVFX.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\DamageVFX.cs",
+              "RelativeDocumentMoniker": "Assets\\DamageVFX.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\DamageVFX.cs",
+              "RelativeToolTip": "Assets\\DamageVFX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:07:26.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Singularity.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\Singularity.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Reactions\\Singularity.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\Singularity.cs",
+              "RelativeToolTip": "Assets\\Common\\Classes\\Reactions\\Singularity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T21:18:45.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Supernova.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\Supernova.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Reactions\\Supernova.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\Supernova.cs",
+              "RelativeToolTip": "Assets\\Common\\Classes\\Reactions\\Supernova.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T21:18:25.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Voidstick.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Void\\Voidstick\\Voidstick.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapons\\Void\\Voidstick\\Voidstick.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Void\\Voidstick\\Voidstick.cs",
+              "RelativeToolTip": "Assets\\Weapons\\Void\\Voidstick\\Voidstick.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:43:04.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Level.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Player\\Scripts\\Level.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Player\\Scripts\\Level.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Player\\Scripts\\Level.cs",
+              "RelativeToolTip": "Assets\\Entities\\Player\\Scripts\\Level.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:20:16.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EnemyStateMachine.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
+              "RelativeToolTip": "Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:04:03.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ScriptableObjects\\Data.cs",
+              "RelativeDocumentMoniker": "Assets\\Common\\ScriptableObjects\\Data.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\ScriptableObjects\\Data.cs",
+              "RelativeToolTip": "Assets\\Common\\ScriptableObjects\\Data.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:39:29.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProjectileShooter.cs",
+              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\ProjectileShooter.cs",
+              "RelativeDocumentMoniker": "Assets\\Entities\\Components\\ProjectileShooter.cs",
+              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Components\\ProjectileShooter.cs",
+              "RelativeToolTip": "Assets\\Entities\\Components\\ProjectileShooter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:38:19.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "BlackHole.cs",
               "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\BlackHole.cs",
               "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Reactions\\BlackHole.cs",
@@ -178,12 +566,11 @@
               "RelativeToolTip": "Assets\\Common\\Classes\\Reactions\\BlackHole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:21:15.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:21:15.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 34,
               "Title": "CosmicStorm.cs",
               "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Common\\Classes\\Reactions\\CosmicStorm.cs",
               "RelativeDocumentMoniker": "Assets\\Common\\Classes\\Reactions\\CosmicStorm.cs",
@@ -191,38 +578,11 @@
               "RelativeToolTip": "Assets\\Common\\Classes\\Reactions\\CosmicStorm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:21:12.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:21:12.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EnemyStateMachine.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
-              "RelativeToolTip": "Assets\\Entities\\Enemies\\Scripts\\EnemyStateMachine.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:04:03.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NebulightProjectile.cs",
-              "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
-              "ToolTip": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
-              "RelativeToolTip": "Assets\\Weapons\\Nebula\\Nebulight\\NebulightProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T19:46:08.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 35,
               "Title": "Nebulight.cs",
               "DocumentMoniker": "D:\\Projects\\Unity\\Ad-Astra\\Ad Astra\\Assets\\Weapons\\Nebula\\Nebulight\\Nebulight.cs",
               "RelativeDocumentMoniker": "Assets\\Weapons\\Nebula\\Nebulight\\Nebulight.cs",
@@ -230,8 +590,7 @@
               "RelativeToolTip": "Assets\\Weapons\\Nebula\\Nebulight\\Nebulight.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T19:46:04.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T19:46:04.268Z"
             }
           ]
         }

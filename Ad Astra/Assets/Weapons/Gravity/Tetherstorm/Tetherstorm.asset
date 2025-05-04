@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Tetherstorm
   description: Rapidly fires bullets that are attracted to eachother.
-  damage: 0.7
+  damage: 2
   attackRate: 35
   knockback: 2
   knockbackStrength: 1

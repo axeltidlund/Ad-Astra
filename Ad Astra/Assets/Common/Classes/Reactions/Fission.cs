@@ -9,9 +9,13 @@ public class Fission : Reaction
     {
         reactionData.Sound(position);
         reactionData.Shake();
-        for (int i = 0; i < 8; i++)
+
+        int max = 8;
+        max = Mathf.FloorToInt(8 * Mathf.Pow(1.2f, GeneralFunctions.instance.PlayerAugmentCount("Chainbreaker")));
+
+        for (int i = 0; i < max; i++)
         {
-            float angle = (360 / 8) * i;
+            float angle = (360 / max) * i;
             transform.SetPositionAndRotation(transform.position, Quaternion.Euler(0, 0, angle));
             shooter.FireProjectile(reactionData, transform);
         }

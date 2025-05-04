@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a8c8957347bf642ad370fefe8cdd08, type: 3}
+  m_Name: Handgun
+  m_EditorClassIdentifier: 
+  displayName: Voidstick
+  description: Good ol' reliable double barrel shotgun... this time with a hint of
+    antimatter.
+  damage: 18
+  attackRate: 10
+  knockback: 5
+  knockbackStrength: 5
+  knockbackTime: 0.2
+  isAutoUse: 0
+  gunPrefab: {fileID: 2472387515838586888, guid: 9520ce72e23f93548b075ef3f8e89569, type: 3}
+  reactiveType: 0
+  rarity: 0
+  shakeDuration: 0.08
+  shakeSpeed: 5
+  shakeAmp: 6
+  shootSound: {fileID: 8300000, guid: 5e8fc58eb5e5e744dbd81a3b99cc0c8f, type: 3}
+  magazineAmount: 8
+  reloadTime: 2
+  recoil: 15
+  shotRange: 80
+  spread: 1

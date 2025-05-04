@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class PlayerInventory : MonoBehaviour
@@ -10,7 +11,7 @@ public class PlayerInventory : MonoBehaviour
     public WeaponData[] weapons = new WeaponData[3];
     public List<AugmentData> augmentations;
 
-    private int _currentWeaponIndex = 0;
+    public int _currentWeaponIndex = 0;
     private GameObject _currentWeaponPrefab;
     private Dictionary<string, int> _ammo = new Dictionary<string, int>();
 
@@ -23,6 +24,8 @@ public class PlayerInventory : MonoBehaviour
     private void Awake()
     {
         SpawnWeapon(_currentWeaponIndex);
+        Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
+        switchWeapon?.Invoke(weaponHandler);
     }
     public void SwitchWeapon(InputAction.CallbackContext context)
     {
@@ -54,11 +57,36 @@ public class PlayerInventory : MonoBehaviour
             if (exists)
             {
                 weapons[i] = weapons[_currentWeaponIndex];
+                weapons[_currentWeaponIndex] = (WeaponData)data;
+                SpawnWeapon(_currentWeaponIndex);
+                Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
+                switchWeapon?.Invoke(weaponHandler);
+            } else {
+                int j = 0;
+                bool empty = false;
+
+                foreach (WeaponData weapon in weapons)
+                {
+                    if (weapon != null)
+                    {
+                        j++;
+                    } else
+                    {
+                        empty = true;
+                        break;
+                    }
+                }
+
+                if (empty) {
+                    weapons[j] = (WeaponData)data;
+                } else
+                {
+                    weapons[_currentWeaponIndex] = (WeaponData)data;
+                    SpawnWeapon(_currentWeaponIndex);
+                    Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
+                    switchWeapon?.Invoke(weaponHandler);
+                }
             }
-            weapons[_currentWeaponIndex] = (WeaponData)data;
-            SpawnWeapon(_currentWeaponIndex);
-            Weapon weaponHandler = _currentWeaponPrefab.GetComponent<Weapon>();
-            switchWeapon?.Invoke(weaponHandler);
         } else if (data is AugmentData)
         {
             augmentations.Add(data as AugmentData);

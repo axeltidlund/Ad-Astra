@@ -46,13 +46,16 @@ public class GameIntermissionState : State
                 WeaponData weaponData = (WeaponData)dataHolder;
 
                 name.text = weaponData.displayName;
+                icon.sprite = weaponData.gunPrefab.GetComponentInChildren<SpriteRenderer>().sprite;
                 type.text = weaponData.rarity.ToString() + " Weapon";
+                type.color = GeneralFunctions.instance.RarityColors[weaponData.rarity];
                 desc.text = weaponData.description;
             } else if (dataHolder is AugmentData) {
                 AugmentData augmentData = (AugmentData)dataHolder;
 
                 name.text = augmentData.displayName;
                 type.text = augmentData.rarity.ToString() + " Augment";
+                type.color = GeneralFunctions.instance.RarityColors[augmentData.rarity];
                 icon.sprite = augmentData.icon;
                 desc.text = augmentData.description;
             } else {
@@ -66,11 +69,16 @@ public class GameIntermissionState : State
     }
     public override void Do()
     {
-        
+
     }
     public override void Exit()
     {
         uiAnimator.SetBool("Selecting", false);
+
+        foreach (Transform child in holder)
+        {
+            child.gameObject.SetActive(false);
+        }
     }
 
     public void Click1() {

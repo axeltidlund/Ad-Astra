@@ -8,6 +8,7 @@ public abstract class Projectile : MonoBehaviour
     protected Data _weaponData;
     protected ProjectileData _projectileData;
     protected PlayerInventory _playerInventory;
+    public float _travelSpeed;
 
     protected float _spawnTime => Time.fixedTime;
     protected Transform _origin;
@@ -30,9 +31,15 @@ public abstract class Projectile : MonoBehaviour
         _weaponData = weaponData;
         _origin = origin;
         _projectileData = projectileData;
+        _travelSpeed = _projectileData.travelSpeed;
         _timeLeft = _projectileData.timeLeft;
         _ricochets = _projectileData.ricochets;
         _penetrations = _projectileData.penetration;
+
+        if (GeneralFunctions.instance.PlayerAugmentCount("Tricks of the Troublemaker") > 0)
+        {
+            _travelSpeed *= Random.value * 2f;
+        }
 
         int augmentCount = GeneralFunctions.instance.PlayerAugmentCount("AP Ammo");
         if (augmentCount > 0)

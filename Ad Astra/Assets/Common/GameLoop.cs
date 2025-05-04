@@ -10,13 +10,17 @@ public class GameLoop : StateMachine
     public UnityEvent<State, State> stateChangedEvent;
     public State intermissionState;
     public State activeState;
+    public State endedState;
 
     public int selectionsLeft = 0;
+    public bool ended = false;
 
     void Start()
     {
+        Time.timeScale = 1f;
         intermissionState.Setup(this);
         activeState.Setup(this);
+        endedState.Setup(this);
         
         state = activeState;
         SelectState();
@@ -26,7 +30,11 @@ public class GameLoop : StateMachine
     {
         State _oldState = state;
 
-        if (selectionsLeft > 0 && state != intermissionState) {
+        if (ended)
+        {
+            state = endedState;
+        }
+        else if (selectionsLeft > 0 && state != intermissionState) {
             state = intermissionState;
             selectionsLeft -= 1;
         } else {
@@ -35,7 +43,6 @@ public class GameLoop : StateMachine
         _oldState.Exit();
         state.Enter();
         stateChangedEvent.Invoke(state, _oldState);
-        Debug.Log(state, _oldState);
     }
     void Update()
     {
@@ -59,6 +66,13 @@ public class GameLoop : StateMachine
         if (!context.started) return;
         if (selectionsLeft <= 0) return;
         if (state == intermissionState) return;
+        SelectState();
+    }
+
+    public void PlayerHeatlh(float health)
+    {
+        if (health > 0) return;
+        ended = true;
         SelectState();
     }
 }

@@ -9,9 +9,11 @@ public class InterfaceHandler : MonoBehaviour
     public Slider xpSlider;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI ammoText;
+    public TextMeshProUGUI healthText;
     public PlayerInventory playerInventory;
     public GameLoop gameLoop;
     public GameObject notification;
+    public Damageable damageable;
 
     private Weapon _lastWeaponHandler;
 
@@ -39,6 +41,7 @@ public class InterfaceHandler : MonoBehaviour
             notification.SetActive(false);
         }
         xpSlider.value = Mathf.Lerp(xpSlider.value, xpGoal, .25f * Time.deltaTime * 60);
+        healthText.text = "HEALTH: " + damageable.health;
 
         if (_lastWeaponHandler == null) { return; }
         if (_lastWeaponHandler is RangedWeapon)

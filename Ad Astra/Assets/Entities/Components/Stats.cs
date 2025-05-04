@@ -12,11 +12,12 @@ public class Stats : MonoBehaviour
     private float globalRes;
     private Dictionary<string, float> resistances = new Dictionary<string, float>();
 
-    [SerializeField]
-    private Global.ReactiveType currentElement = Global.ReactiveType.None;
+    public Global.ReactiveType currentElement = Global.ReactiveType.None;
 
     private void Awake()
     {
+        damageable = GetComponent<Damageable>();
+        damageable.Setup(entityData.maxHealth);
         globalRes = entityData.globalRes;
         string[] elements = Enum.GetNames(typeof(Global.ReactiveType));
         foreach (string element in elements)

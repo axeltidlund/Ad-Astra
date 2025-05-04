@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b4a58f4ac50a4cba4ddb33fafc59a, type: 3}
+  m_Name: HandgunProjectile
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4525687196487094131, guid: 5d88e0c1a63a2924e876decc4dc44c62, type: 3}
+  travelSpeed: 1200
+  timeLeft: 1
+  radius: 0.35
+  ricochets: 0
+  penetration: 0
+  maxAllowedHitFrequency: 0.1

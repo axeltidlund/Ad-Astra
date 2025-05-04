@@ -9,6 +9,7 @@ public class LootHandler : MonoBehaviour
 
     public PlayerInventory playerInventory;
 
+    public float pity = 0f;
     public AugmentData RollAugment()
     {
         float totalWeight = 0;
@@ -56,20 +57,22 @@ public class LootHandler : MonoBehaviour
             if (actualWeight >= value)
             {
                 selected = p;
+                break;
             }
 
             value -= actualWeight;
         }
 
-        Debug.Log(selected);
         return selected;
     }
 
     public Data Roll() {
         float rand = Random.Range(0f, 1f);
-        if (rand > .2) {
+        if (rand > (.3 + pity)) {
+            pity += .05f;
             return RollAugment();
         } else {
+            pity = 0f;
             return RollWeapon();
         }
     }

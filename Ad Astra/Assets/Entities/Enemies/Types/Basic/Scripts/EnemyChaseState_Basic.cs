@@ -41,6 +41,7 @@ public class EnemyChaseState_Basic : State
     }
     public override void Do()
     {
+        attackTimer -= Time.deltaTime;
         aim.UpdateAim(input_enemy.player.transform.position);
         if (path == null)
             return;
@@ -59,11 +60,7 @@ public class EnemyChaseState_Basic : State
         if (distance < nextWaypointDistance) {
             currentWaypoint++;
         }
-        if (attackTimer > 0)
-        {
-            attackTimer -= Time.deltaTime;
-        }
-        else
+        if (attackTimer <= 0)
         {
             if (playerDistance >= nextWaypointDistance) return;
 

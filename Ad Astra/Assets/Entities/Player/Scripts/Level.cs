@@ -11,15 +11,20 @@ public class Level : MonoBehaviour
     public UnityEvent<int, int> levelChangedEvent;
     public UnityEvent<float, float> xpChangedEvent;
 
+    public AudioClip xpGain;
+    public AudioClip levelGain;
+
     private float RequiredXPForLevel(int level) {
-        return 10 * Mathf.Log(level) + 10;
+        return 8 * Mathf.Log(level) + 10;
     }
 
     public void GiveXP(float amount) {
         xpChangedEvent.Invoke(Mathf.Min(1, (_xp + amount) / RequiredXPForLevel(_level)), Mathf.Min(1, _xp / RequiredXPForLevel(_level)));
         _xp += amount;
+        GeneralFunctions.instance.PlaySound(xpGain, .8f, transform);
         if (_xp >= RequiredXPForLevel(_level)) {
             SetLevel(_level + 1);
+            GeneralFunctions.instance.PlaySound(levelGain, 1f, transform);
         }
     }
 
