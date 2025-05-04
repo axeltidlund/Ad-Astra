@@ -12,6 +12,9 @@ public class GameLoop : StateMachine
     public State activeState;
     public State endedState;
 
+    public Damageable damageable;
+    public Stats stats;
+
     public int selectionsLeft = 0;
     public bool ended = false;
 
@@ -59,6 +62,7 @@ public class GameLoop : StateMachine
 
     public void HandleLevelUp(int newLevel, int oldLevel) {
         if (newLevel % 5 != 0) return;
+        damageable.health = Mathf.Min(stats.entityData.maxHealth, damageable.health + 5);
         selectionsLeft += 1;
     }
 

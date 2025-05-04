@@ -116,10 +116,13 @@ public class GeneralFunctions : MonoBehaviour
         AudioSource source = go.GetComponent<AudioSource>();
         source.clip = clip;
         source.volume = volume * .1f;
+        source.pitch = .8f + (Random.value * .4f);
         source.loop = false;
         source.Play();
         Destroy(go, clip.length);
     }
+
+    public int enemyCount = 0;
 
     public float TriggerReaction(float damage, Global.AugmentReactionTarget reaction, Transform transform) {
         if (reaction == Global.AugmentReactionTarget.None) { return damage; }

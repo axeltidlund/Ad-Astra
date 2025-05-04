@@ -28,7 +28,7 @@ public class GameActiveState : State
     {
         currentTime += Time.deltaTime;
         spawnTimer += Time.deltaTime;
-        if (spawnTimer >= maxSpawnTime * currentDifficultyMultiplier) {
+        if (spawnTimer >= maxSpawnTime * currentDifficultyMultiplier && GeneralFunctions.instance.enemyCount < 40) {
             spawnTimer = 0f;
             // Spawn
 
@@ -36,6 +36,7 @@ public class GameActiveState : State
             Transform randomSpawnTransform = spawnTransforms.transform.GetChild(randomSpawnIndex);
 
             Instantiate(enemyPrefab, randomSpawnTransform.position, Quaternion.identity);
+            GeneralFunctions.instance.enemyCount++;
         }
     }
     public override void Exit()

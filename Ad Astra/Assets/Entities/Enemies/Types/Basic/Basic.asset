@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Basic
   m_EditorClassIdentifier: 
   displayName: Basic
-  maxHealth: 50
-  speed: 100
+  maxHealth: 65
+  speed: 130
   attack: 15
   globalRes: 1
   attackSpeed: 2
   detectionRange: 10
-  xp: 5
+  xp: 6

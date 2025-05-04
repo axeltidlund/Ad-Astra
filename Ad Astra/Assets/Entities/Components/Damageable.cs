@@ -11,7 +11,7 @@ public class Damageable : MonoBehaviour
 
     public Vector2 impulse;
     public float impulseTime = 0f;
-    public float health { get; private set; }
+    public float health;
 
     Stats stats;
     Moveable moveable;

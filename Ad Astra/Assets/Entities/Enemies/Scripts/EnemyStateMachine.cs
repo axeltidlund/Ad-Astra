@@ -52,6 +52,7 @@ public class EnemyStateMachine : StateMachine
     public void OnDamage(float newHealth) {
         if (newHealth <= 0) {
             GeneralFunctions.instance.RewardXP(enemyData.xp);
+            GeneralFunctions.instance.enemyCount--;
             Destroy(gameObject); // CHANGE
         }
     }

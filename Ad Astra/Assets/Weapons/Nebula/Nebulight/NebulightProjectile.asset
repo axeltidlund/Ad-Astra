@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NebulightProjectile
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4525687196487094131, guid: 57b2bbf32f953c24887658cd77a86f83, type: 3}
-  travelSpeed: 800
+  travelSpeed: 650
   timeLeft: 1
   radius: 0.35
   ricochets: 2
