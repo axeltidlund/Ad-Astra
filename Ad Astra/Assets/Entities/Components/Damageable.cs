@@ -28,6 +28,10 @@ public class Damageable : MonoBehaviour
     public void Damage(float damage, Global.ReactiveType element, Vector2 _impulse, float _impulseDuration, Global.AugmentReactionTarget oldReaction = Global.AugmentReactionTarget.None)
     {
         bool isPlayer = gameObject.name != "Player";
+        if(!isPlayer)
+        {
+            return;
+        }
         Global.AugmentReactionTarget reaction = Global.AugmentReactionTarget.None;
 
         float finalDamage = damage * stats.GetGlobalResistance() * stats.GetResistance(System.Enum.GetName(typeof(Global.ReactiveType), element));
