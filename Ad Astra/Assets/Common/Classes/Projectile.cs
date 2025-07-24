@@ -19,6 +19,8 @@ public abstract class Projectile : MonoBehaviour
     protected Rigidbody2D _rb;
     public float _timeLeft { get; protected set; }
 
+    protected virtual void Cleanup() { }
+
     private int _ricochets = 0;
     private int _penetrations = 0;
     private float _lastHit = 0;
@@ -70,6 +72,7 @@ public abstract class Projectile : MonoBehaviour
         _timeLeft -= Time.deltaTime;
         if (_timeLeft < 0)
         {
+            Cleanup();
             this.gameObject.SetActive(false);
             Destroy(this.gameObject, 1f);
         }
@@ -150,5 +153,10 @@ public abstract class Projectile : MonoBehaviour
             this.gameObject.SetActive(false);
             Destroy(this.gameObject, 1f);
         }
+    }
+
+    protected virtual void OnDestroy()
+    {
+        Cleanup();
     }
 }
