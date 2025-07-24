@@ -49,12 +49,6 @@ Weapons
     -       Effects
     -       Prefabs
     -       Sprites
-    -   Quantum Echo Blade
-    -       Animations
-    -       Audio
-    -       Effects
-    -       Prefabs
-    -       Sprites
     Stellar
     -   Starcaster
     -       Audio
