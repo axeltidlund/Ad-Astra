@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameActiveState : State
 {
     public GameObject spawnTransforms;
-    public GameObject enemyPrefab; // this needs to be changed
+    public EnemyPool enemyPool;
     private float spawnTimer = 0f;
     public float maxSpawnTime = 2f;
 
@@ -35,7 +35,7 @@ public class GameActiveState : State
             int randomSpawnIndex = Random.Range(0, spawnTransforms.transform.childCount);
             Transform randomSpawnTransform = spawnTransforms.transform.GetChild(randomSpawnIndex);
 
-            Instantiate(enemyPrefab, randomSpawnTransform.position, Quaternion.identity);
+            enemyPool.Request(randomSpawnTransform.position);
             GeneralFunctions.instance.enemyCount++;
         }
     }
