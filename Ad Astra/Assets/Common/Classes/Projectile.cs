@@ -12,6 +12,7 @@ public abstract class Projectile : MonoBehaviour
 
     protected float _spawnTime => Time.fixedTime;
     protected Transform _origin;
+    protected Transform _originRoot;
 
     public Collider2D mainCollider;
 
@@ -30,6 +31,7 @@ public abstract class Projectile : MonoBehaviour
     {
         _weaponData = weaponData;
         _origin = origin;
+        _originRoot = origin.root;
         _projectileData = projectileData;
         _travelSpeed = _projectileData.travelSpeed;
         _timeLeft = _projectileData.timeLeft;
@@ -54,6 +56,14 @@ public abstract class Projectile : MonoBehaviour
             spread = rangedData.spread;
         }
         transform.SetPositionAndRotation(origin.position, origin.rotation * Quaternion.Euler(0, 0, Random.Range(-spread, spread)));
+
+        if (mainCollider != null)
+        {
+            foreach (Collider2D col in _originRoot.GetComponentsInChildren<Collider2D>())
+            {
+                Physics2D.IgnoreCollision(mainCollider, col);
+            }
+        }
     }
     public void Update()
     {
@@ -69,6 +79,7 @@ public abstract class Projectile : MonoBehaviour
         RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, _projectileData.radius, -transform.right, _rb.velocity.magnitude * Time.fixedDeltaTime, hitLayers);
 
         if (!hit) return;
+        if (hit.collider.transform.root == _originRoot) return;
         if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Walls"))
         {
             OnWall(hit);
