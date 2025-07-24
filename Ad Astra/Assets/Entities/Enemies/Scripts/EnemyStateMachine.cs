@@ -21,9 +21,13 @@ public class EnemyStateMachine : StateMachine
 
         state = idleState;
         player = FindAnyObjectByType<PlayerStateMachine>().gameObject;
+    }
 
+    private void OnEnable()
+    {
         Damageable damageable = GetComponent<Damageable>();
         damageable.Setup(enemyData.maxHealth / GeneralFunctions.instance.globalDifficulty);
+        state = idleState;
     }
     void SelectState()
     {
@@ -53,7 +57,7 @@ public class EnemyStateMachine : StateMachine
         if (newHealth <= 0) {
             GeneralFunctions.instance.RewardXP(enemyData.xp);
             GeneralFunctions.instance.enemyCount--;
-            Destroy(gameObject); // CHANGE
+            EnemyPool.instance.Return(gameObject);
         }
     }
 }
