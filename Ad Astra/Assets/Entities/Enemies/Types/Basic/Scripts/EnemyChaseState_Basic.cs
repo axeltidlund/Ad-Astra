@@ -28,7 +28,8 @@ public class EnemyChaseState_Basic : State
         seeker = input_enemy.gameObject.GetComponent<Seeker>();
         aim = input_enemy.gameObject.GetComponentInChildren<EnemyAim>();
 
-        InvokeRepeating("UpdatePath", 0f, .2f);
+        if (!IsInvoking("UpdatePath"))
+            InvokeRepeating("UpdatePath", 0f, .2f);
     }
     void UpdatePath() {
         seeker.StartPath(transform.position, input_enemy.player.transform.position, OnPathComplete);
@@ -80,6 +81,7 @@ public class EnemyChaseState_Basic : State
     }
     public override void Exit()
     {
+        CancelInvoke("UpdatePath");
 
     }
     private void OnDisable()

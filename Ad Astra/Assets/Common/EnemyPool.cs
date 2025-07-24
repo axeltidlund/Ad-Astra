@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Pool for enemy prefabs with weighted random spawning
 public class EnemyPool : MonoBehaviour
 {
     public static EnemyPool instance;
