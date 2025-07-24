@@ -75,7 +75,9 @@ public abstract class Projectile : MonoBehaviour
         }
         AI();
 
-        LayerMask hitLayers = LayerMask.GetMask("Walls") | LayerMask.GetMask("Enemies");
+        LayerMask hitLayers = LayerMask.GetMask("Walls") |
+                              LayerMask.GetMask("Enemies") |
+                              LayerMask.GetMask("Player");
         RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, _projectileData.radius, -transform.right, _rb.velocity.magnitude * Time.fixedDeltaTime, hitLayers);
 
         if (!hit) return;
@@ -84,7 +86,10 @@ public abstract class Projectile : MonoBehaviour
         {
             OnWall(hit);
         }
-        else if (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Enemies") && hit.collider.gameObject.tag == "Enemy")
+        else if ((hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Enemies") &&
+                  hit.collider.gameObject.CompareTag("Enemy")) ||
+                 (hit.rigidbody.gameObject.layer == LayerMask.NameToLayer("Player") &&
+                  hit.collider.gameObject.CompareTag("Player")))
         {
             ProcessHit(hit);
         }
