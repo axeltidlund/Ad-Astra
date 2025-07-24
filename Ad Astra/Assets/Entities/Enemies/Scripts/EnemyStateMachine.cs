@@ -34,7 +34,7 @@ public class EnemyStateMachine : StateMachine
         if ((idleState as EnemyIdleState_Basic).canSeePlayer)
         {
             state = chaseState;
-        } else if (!(chaseState as EnemyChaseState_Basic).canSeePlayer)
+        } else
         {
             state = idleState;
         }

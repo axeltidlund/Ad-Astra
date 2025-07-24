@@ -8,6 +8,7 @@ public class FlashOnDamage : MonoBehaviour
     public float flashTime;
     private void Awake()
     {
+        mat.SetInt("_Hit", 0);
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         mat = spriteRenderer.material;
     }

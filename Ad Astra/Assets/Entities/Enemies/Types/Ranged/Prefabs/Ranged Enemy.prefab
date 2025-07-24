@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: -3560248963499908424, guid: ad75135dbc7236f4087c4a45b586291f, type: 3}
-  m_Color: {r: 1, g: 0.4198113, b: 0.4198113, a: 1}
+  m_Color: {r: 0.23957352, g: 0.19339621, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   - {x: -0.31182417, y: -0.009655893, z: 0}
   m_ShapePathHash: -1602084066
   m_Mesh: {fileID: 0}
-  m_InstanceId: 37128
+  m_InstanceId: 41674
   m_LocalBounds:
     m_Center: {x: -0.030802697, y: 0.31611675, z: 0}
     m_Extent: {x: 0.41589814, y: 0.33141875, z: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   chaseState: {fileID: 9086310271780141110}
   moveableComponent: {fileID: 7446451854999089011}
   player: {fileID: 0}
-  enemyData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
+  enemyData: {fileID: 11400000, guid: 4c20d77313ef04ea6b483a74aa6614d5, type: 2}
 --- !u!70 &4530689799069816895
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e62f47d55f2ba34dba9aea5358821f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityData: {fileID: 11400000, guid: 73b1d374dcaee0a408e224f981d22e6e, type: 2}
+  entityData: {fileID: 11400000, guid: 4c20d77313ef04ea6b483a74aa6614d5, type: 2}
   currentElement: 0
 --- !u!114 &8838574901145275535
 MonoBehaviour:
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectiles:
-  - {fileID: 11400000, guid: d0e3a0293ddd16e4684add4187e906fb, type: 2}
+  - {fileID: 11400000, guid: 2ab13e0b677f0c94691cc6457525bb3e, type: 2}
 --- !u!1 &2564966297010169969
 GameObject:
   m_ObjectHideFlags: 0
