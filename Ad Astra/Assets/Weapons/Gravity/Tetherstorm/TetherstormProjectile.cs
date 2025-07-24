@@ -23,4 +23,10 @@ public class TetherstormProjectile : Projectile
     {
         GeneralFunctions.instance.tetherstormBullets.Remove(_rb);
     }
+
+    protected override void Cleanup()
+    {
+        GeneralFunctions.instance.tetherstormBullets.Remove(_rb);
+        base.Cleanup();
+    }
 }
