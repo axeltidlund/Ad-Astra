@@ -101,6 +101,11 @@ public class EnemyChaseState_Ranged : State
         CancelInvoke("UpdatePath");
     }
 
+    private void OnDisable()
+    {
+        CancelInvoke("UpdatePath");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.gameObject.tag.Equals("Player")) return;

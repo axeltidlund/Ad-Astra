@@ -82,6 +82,10 @@ public class EnemyChaseState_Basic : State
     {
 
     }
+    private void OnDisable()
+    {
+        CancelInvoke("UpdatePath");
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.gameObject.tag.Equals("Player")) return;
